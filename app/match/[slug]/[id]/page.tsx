@@ -1,5 +1,6 @@
 import Link from "next/link";
 import TeamPanel from "@/components/TeamPanel";
+import PredictionPanel from "@/components/PredictionPanel";
 import { getSummary } from "@/lib/espn";
 import { compName } from "@/lib/leagues";
 
@@ -21,6 +22,15 @@ export default async function MatchPage({ params, searchParams }: { params: { sl
         <h1>{home.team.displayName} {c.status?.type?.state === "pre" ? "vs" : `${home.score}-${away.score}`} {away.team.displayName}</h1>
         <div className="note">Click a club name for its full page. Use the chips to switch between this tournament and all tournaments.</div>
       </div>
+      <PredictionPanel
+        slug={params.slug}
+        date={c.date}
+        homeId={String(home.team.id)}
+        homeName={home.team.displayName}
+        awayId={String(away.team.id)}
+        awayName={away.team.displayName}
+        finished={c.status?.type?.completed === true}
+      />
       <div className="grid2">
         <TeamPanel teamId={String(home.team.id)} comp={comp} basePath={base} />
         <TeamPanel teamId={String(away.team.id)} comp={comp} basePath={base} />

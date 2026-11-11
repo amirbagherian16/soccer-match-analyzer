@@ -52,3 +52,9 @@ export const compName = (slug: string) =>
   COMPS.find((c) => c.slug === slug)?.name ?? pretty(slug);
 
 export const isFriendly = (slug: string) => slug.includes("friendly");
+
+export const isDomesticLeague = (slug: string) =>
+  COMPS.find((c) => c.slug === slug)?.group === "League";
+
+export const isNational = (slug: string) =>
+  COMPS.find((c) => c.slug === slug)?.kind === "national";
