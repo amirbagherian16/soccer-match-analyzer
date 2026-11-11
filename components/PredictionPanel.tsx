@@ -31,7 +31,14 @@ export default async function PredictionPanel(props: { matchId: string; comp: st
     <div className="card">
       <h1 style={{ marginTop: 0 }}>Prediction</h1>
       <div className="kpis">
-        <div className="kpi"><small>Model exact-score pick{locked ? " (locked)" : " (live, not yet locked)"}</small><b>{aiPick.h} - {aiPick.a}</b></div>
+        <div className="kpi">
+          <small>Model exact-score pick{locked ? " (locked)" : " (live, not yet locked)"}</small>
+          <div style={{ display: "flex", gap: 10, alignItems: "center", marginTop: 4 }}>
+            {props.homeLogo && <img src={props.homeLogo} alt={H} title={H} style={{ width: 34, height: 34, objectFit: "contain" }} />}
+            <b style={{ fontSize: 24 }}>{aiPick.h} - {aiPick.a}</b>
+            {props.awayLogo && <img src={props.awayLogo} alt={A} title={A} style={{ width: 34, height: 34, objectFit: "contain" }} />}
+          </div>
+        </div>
       </div>
       {props.finished && <div className="note" style={{ marginBottom: 8 }}>Match already played: the model only uses results from before kick-off.</div>}
       <Bar label={p.elo ? "Blend (Poisson + Elo)" : "Poisson model"} p={p.blend} home={H} away={A} />

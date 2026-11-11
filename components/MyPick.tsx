@@ -4,6 +4,10 @@ import { loadPicks, savePick, deletePick, type UserPick } from "@/lib/local";
 
 type Match = Omit<UserPick, "h" | "a" | "savedAt">;
 
+function Logo({ src, name }: { src?: string; name: string }) {
+  return src ? <img src={src} alt={name} title={name} style={{ width: 34, height: 34, objectFit: "contain" }} /> : <span className="mut" title={name}>{name.slice(0, 3).toUpperCase()}</span>;
+}
+
 export default function MyPick({ match, aiPick }: { match: Match; aiPick: { h: number; a: number } }) {
   const [h, setH] = useState("");
   const [a, setA] = useState("");
@@ -37,14 +41,23 @@ export default function MyPick({ match, aiPick }: { match: Match; aiPick: { h: n
     <div className="card">
       <h1 style={{ marginTop: 0 }}>Exact score picks</h1>
       <div className="kpis">
-        <div className="kpi"><small>Model pick</small><b>{aiPick.h} - {aiPick.a}</b></div>
+        <div className="kpi">
+          <small>Model pick</small>
+          <div style={{ display: "flex", gap: 10, alignItems: "center", marginTop: 4 }}>
+            <Logo src={match.homeLogo} name={match.home} />
+            <b style={{ fontSize: 24 }}>{aiPick.h} - {aiPick.a}</b>
+            <Logo src={match.awayLogo} name={match.away} />
+          </div>
+        </div>
         <div className="kpi">
           <small>Your pick {locked ? "(locked: kick-off passed)" : ""}</small>
           {locked && !saved ? <b>–</b> : (
-            <div style={{ display: "flex", gap: 6, alignItems: "center", marginTop: 4 }}>
+            <div style={{ display: "flex", gap: 8, alignItems: "center", marginTop: 4, flexWrap: "wrap" }}>
+              <Logo src={match.homeLogo} name={match.home} />
               <input inputMode="numeric" aria-label={`${match.home} goals`} value={h} onChange={(e) => setH(e.target.value)} disabled={locked} style={box} />
               <b>-</b>
               <input inputMode="numeric" aria-label={`${match.away} goals`} value={a} onChange={(e) => setA(e.target.value)} disabled={locked} style={box} />
+              <Logo src={match.awayLogo} name={match.away} />
               {!locked && <button className="tab on" onClick={save} disabled={!ok} style={{ cursor: ok ? "pointer" : "not-allowed", opacity: ok ? 1 : 0.5 }}>{saved ? "Update" : "Submit"}</button>}
               {!locked && saved && <button className="tab" onClick={() => { deletePick(match.id); setSaved(null); setH(""); setA(""); setMsg("Removed."); }} style={{ cursor: "pointer" }}>Remove</button>}
             </div>
