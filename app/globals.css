@@ -42,3 +42,5 @@ a.ext{color:var(--acc);text-decoration:underline}
 .barcol .pill{min-width:22px;font-size:12px;padding:0 5px}
 .barscore{font-size:12px;color:var(--fg)}
 .barlogo{width:22px;height:22px;object-fit:contain}
+.barwrap{height:128px;flex-direction:column;justify-content:flex-end;align-items:center;gap:3px}
+.barwrap .barval{font-size:12px;font-weight:600;color:var(--fg)}

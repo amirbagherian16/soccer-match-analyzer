@@ -30,9 +30,9 @@ function BarChart({ cols, max, note, dec = false }: { cols: Col[]; max: number; 
       <div className="bars">
         {cols.map(({ r, v, hot }) => (
           <div key={r.id} className="barcol" title={`${r.date.slice(0, 10)} ${r.home ? "vs" : "@"} ${r.opp}: ${r.gf}-${r.ga}`}>
-            <span className="barval">{v != null ? (dec ? v.toFixed(2) : fmt1(v)) : "n/a"}</span>
             <div className="barwrap">
-              <div className={`bar ${hot}`} style={{ height: `${v != null ? Math.max((v / max) * 100, 3) : 0}%` }} />
+              <span className="barval">{v != null ? (dec ? v.toFixed(2) : fmt1(v)) : "n/a"}</span>
+              <div className={`bar ${hot}`} style={{ height: `${v != null ? Math.max((v / max) * 100, 3) : 0}px` }} />
             </div>
             <span className={`pill ${r.outcome}`}>{r.outcome}</span>
             <span className="barscore">{r.gf}-{r.ga}</span>
