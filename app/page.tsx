@@ -3,6 +3,7 @@ import { COMPS } from "@/lib/leagues";
 import { getScoreboard, type Fixture } from "@/lib/espn";
 import { chicago } from "@/lib/time";
 import RowPicks from "@/components/RowPicks";
+import StorageNotice from "@/components/StorageNotice";
 import stored from "@/data/predictions.json";
 import type { Entry } from "@/lib/score";
 
@@ -55,7 +56,8 @@ export default async function Home({ searchParams }: { searchParams: { date?: st
   return (
     <>
       <h1>Matches · {pretty(date)}</h1>
-      <div className="note" style={{ marginBottom: 10 }}>Times are US Central. Enter your own score in the “Your pick” boxes before kick-off (saved in this browser). The model pick is locked the day before; later matches show a live estimate.</div>
+      <div className="note" style={{ marginBottom: 10 }}>Times are US Central. Enter your own score in the “Your pick” boxes before kick-off (saved to your account on the server). The model pick is locked the day before; later matches show a live estimate.</div>
+      <StorageNotice />
       <div className="tabs">
         <Link className={`tab ${type === "club" ? "on" : ""}`} href={q(date, "club")}>Clubs</Link>
         <Link className={`tab ${type === "national" ? "on" : ""}`} href={q(date, "national")}>National teams</Link>

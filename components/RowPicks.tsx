@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { deletePick, loadPicks, savePick } from "@/lib/local";
+import { deletePick, loadPicks, savePick, subscribe } from "@/lib/picks-client";
 
 type Props = {
   slug: string; id: string; date: string; comp: string; state: "pre" | "in" | "post";
@@ -17,15 +17,19 @@ export default function RowPicks(p: Props) {
   const [a, setA] = useState("");
   const [saved, setSaved] = useState(false);
   const [started, setStarted] = useState(p.state !== "pre");
+  const [enabled, setEnabled] = useState(true);
+  const [err, setErr] = useState("");
 
   useEffect(() => {
     setStarted(p.state !== "pre" || Date.now() >= new Date(p.date).getTime());
-    const mine = loadPicks()[p.id];
-    if (mine) {
-      setH(String(mine.h));
-      setA(String(mine.a));
-      setSaved(true);
-    }
+    const apply = () =>
+      loadPicks().then(({ status, picks }) => {
+        setEnabled(status.configured);
+        const mine = picks[p.id];
+        if (mine) { setH(String(mine.h)); setA(String(mine.a)); setSaved(true); }
+      });
+    apply();
+    return subscribe(apply);
   }, [p.id, p.date, p.state]);
 
   // Matches without a locked pick get a live model estimate (upcoming games only).
@@ -40,13 +44,16 @@ export default function RowPicks(p: Props) {
     return () => { dead = true; };
   }, [p.locked, p.slug, p.date, p.homeId, p.awayId, p.state]);
 
-  function commit(nh: string, na: string) {
+  async function commit(nh: string, na: string) {
+    setErr("");
     if (/^\d{1,2}$/.test(nh) && /^\d{1,2}$/.test(na)) {
-      savePick({ id: p.id, slug: p.slug, comp: p.comp, date: p.date, home: p.home, homeLogo: p.homeLogo, away: p.away, awayLogo: p.awayLogo, h: +nh, a: +na, savedAt: new Date().toISOString() });
-      setSaved(true);
+      const r = await savePick({ id: p.id, slug: p.slug, comp: p.comp, date: p.date, home: p.home, homeLogo: p.homeLogo, away: p.away, awayLogo: p.awayLogo, h: +nh, a: +na });
+      setSaved(r.ok);
+      if (!r.ok) setErr(r.error ?? "Could not save");
     } else if (nh === "" && na === "") {
-      deletePick(p.id);
+      const r = await deletePick(p.id);
       setSaved(false);
+      if (!r.ok && r.error) setErr(r.error);
     } else setSaved(false);
   }
 
@@ -67,11 +74,11 @@ export default function RowPicks(p: Props) {
         ) : (
           <>
             <input inputMode="numeric" aria-label={`${p.home} goals`} placeholder="–" value={h} style={box}
-              onChange={(e) => { setH(e.target.value); setSaved(false); }} onBlur={() => commit(h, a)} />
+              onChange={(e) => { setH(e.target.value); setSaved(false); }} onBlur={() => commit(h, a)} disabled={!enabled} />
             <span>-</span>
             <input inputMode="numeric" aria-label={`${p.away} goals`} placeholder="–" value={a} style={box}
-              onChange={(e) => { setA(e.target.value); setSaved(false); }} onBlur={() => commit(h, a)} />
-            <small style={{ color: "var(--w)", width: 12 }}>{saved ? "✓" : ""}</small>
+              onChange={(e) => { setA(e.target.value); setSaved(false); }} onBlur={() => commit(h, a)} disabled={!enabled} />
+            <small style={{ color: err ? "var(--l)" : "var(--w)", width: 12 }} title={err}>{err ? "!" : saved ? "✓" : ""}</small>
           </>
         )}
       </span>

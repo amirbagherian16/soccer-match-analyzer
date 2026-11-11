@@ -1,13 +1,15 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import { judge, label, outcomeOf, type Entry } from "@/lib/score";
-import { loadPicks, replaceAll, type UserPick } from "@/lib/local";
+import { loadPicks, savePick, subscribe, type UserPick } from "@/lib/picks-client";
+import StorageNotice from "./StorageNotice";
+import MetricsPanel, { type MetricRow } from "./MetricsPanel";
 import { chicagoLabel } from "@/lib/time";
 
 type Row = {
   id: string; slug: string; comp: string; date: string;
   home: string; away: string; homeLogo?: string; awayLogo?: string;
-  ai?: { h: number; a: number };
+  ai?: { h: number; a: number; probs?: { h: number; d: number; a: number } };
   me?: { h: number; a: number };
   result?: { h: number; a: number };
 };
@@ -25,12 +27,16 @@ export default function PredictionsTable({ entries }: { entries: Entry[] }) {
   const [fetched, setFetched] = useState<Record<string, { h: number; a: number }>>({});
   const [f, setF] = useState({ comp: "", status: "", q: "", who: "", ok: "" });
 
-  useEffect(() => setMine(loadPicks()), []);
+  useEffect(() => {
+    const apply = () => loadPicks().then((x) => setMine({ ...x.picks }));
+    apply();
+    return subscribe(apply);
+  }, []);
 
   const rows: Row[] = useMemo(() => {
     const map = new Map<string, Row>();
     for (const e of entries) {
-      map.set(e.id, { id: e.id, slug: e.slug, comp: e.comp, date: e.date, home: e.home, away: e.away, homeLogo: e.homeLogo, awayLogo: e.awayLogo, ai: { h: e.ai.h, a: e.ai.a }, result: e.result });
+      map.set(e.id, { id: e.id, slug: e.slug, comp: e.comp, date: e.date, home: e.home, away: e.away, homeLogo: e.homeLogo, awayLogo: e.awayLogo, ai: { h: e.ai.h, a: e.ai.a, probs: e.ai.probs }, result: e.result });
     }
     for (const p of Object.values(mine)) {
       const r = map.get(p.id) ?? { id: p.id, slug: p.slug, comp: p.comp, date: p.date, home: p.home, away: p.away, homeLogo: p.homeLogo, awayLogo: p.awayLogo };
@@ -91,22 +97,27 @@ export default function PredictionsTable({ entries }: { entries: Entry[] }) {
     a.download = "my-picks.json";
     a.click();
   }
-  function importJson(file: File) {
-    file.text().then((t) => {
-      try {
-        const p = JSON.parse(t);
-        replaceAll({ ...loadPicks(), ...p });
-        setMine(loadPicks());
-      } catch {
-        alert("That file is not a valid picks export.");
+  async function importJson(file: File) {
+    try {
+      const p = JSON.parse(await file.text()) as Record<string, UserPick>;
+      let ok = 0, bad = 0;
+      for (const pk of Object.values(p)) {
+        const r = await savePick(pk, { import: true });
+        if (r.ok) ok++; else bad++;
       }
-    });
+      alert(`Imported ${ok} picks${bad ? `, ${bad} rejected (they must have been saved before kick-off)` : ""}.`);
+      await loadPicks(true).then((x) => setMine({ ...x.picks }));
+    } catch {
+      alert("That file is not a valid picks export.");
+    }
   }
 
   const sel = { background: "#0e1116", color: "inherit", border: "1px solid var(--line)", borderRadius: 8, padding: "6px 8px" } as const;
 
   return (
     <>
+      <StorageNotice />
+      <MetricsPanel rows={rows as MetricRow[]} />
       <div className="kpis">
         <div className="kpi"><small>Model · exact score</small><b>{pct(sa.ex, sa.n)}</b><small>{sa.ex} of {sa.n} finished</small></div>
         <div className="kpi"><small>Model · result (W/D/L)</small><b>{pct(sa.re, sa.n)}</b><small>{sa.re} of {sa.n} finished</small></div>
@@ -181,7 +192,7 @@ export default function PredictionsTable({ entries }: { entries: Entry[] }) {
         </table>
         <div className="note">
           H = home win, D = draw, A = away win. Scores are judged on the final score (including extra time, excluding penalty shoot-outs). “–” means no pick or the match isn&apos;t finished.
-          Model picks come from the daily job; your picks are stored in this browser (use Export/Import to move them between devices).
+          Model picks come from the daily job; your picks are stored on the server and show in any browser. Export/Import is only for backups.
         </div>
       </div>
       <span hidden>{label("H")}</span>

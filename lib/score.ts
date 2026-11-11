@@ -37,3 +37,15 @@ export type Entry = {
 };
 
 export const label = (o: Outcome) => (o === "H" ? "Home win" : o === "A" ? "Away win" : "Draw");
+
+export type UserPick = Pick & {
+  id: string;
+  slug: string;
+  comp: string;
+  date: string;
+  home: string;
+  homeLogo?: string;
+  away: string;
+  awayLogo?: string;
+  savedAt: string;
+};
