@@ -49,6 +49,28 @@ function GoalBars({ results, kind }: { results: Result[]; kind: "scored" | "conc
   );
 }
 
+function XgBars({ results, xg }: { results: Result[]; xg: Record<string, number> }) {
+  const list = [...results].reverse();
+  const max = Math.max(3, ...list.map((r) => xg[r.id] ?? 0));
+  return (
+    <>
+      <div className="bars">
+        {list.map((r) => {
+          const v = xg[r.id];
+          return (
+            <div key={r.id} className="barcol" title={`${r.date.slice(0, 10)} ${r.home ? "vs" : "@"} ${r.opp}: xG ${v != null ? fmt(v) : "n/a"}`}>
+              <span className="barval">{v != null ? fmt(v) : "n/a"}</span>
+              <div className="bar xg" style={{ height: `${v != null ? Math.max((v / max) * 100, 3) : 0}%` }} />
+              <span className="barlbl">{r.opp.slice(0, 3).toUpperCase()}</span>
+            </div>
+          );
+        })}
+      </div>
+      <div className="note">ESPN xG per match, oldest → newest. “n/a” = ESPN does not publish xG for that match.</div>
+    </>
+  );
+}
+
 function Best({ title, list, kind }: { title: string; list: PlayerAgg[]; kind: "ATT" | "MID" | "DEF" | "GK" }) {
   return (
     <>
@@ -102,8 +124,6 @@ export default async function TeamPanel({ teamId, comp, basePath }: { teamId: st
         <Kpi l="Goals scored" v={a.goalsFor} />
         <Kpi l="Goals conceded" v={a.goalsAgainst} />
         <Kpi l="Clean sheets" v={a.cleanSheets} />
-        <Kpi l="xG average" v={a.xg ? fmt(a.xg.avg) : "–"} />
-        <Kpi l="xG min / max" v={a.xg ? `${fmt(a.xg.min)} / ${fmt(a.xg.max)}` : "–"} />
         <Kpi l="Top scorer" v={a.topScorer ? `${a.topScorer.name.split(" ").slice(-1)[0]} (${a.topScorer.goals})` : "–"} />
       </div>
 
@@ -112,6 +132,13 @@ export default async function TeamPanel({ teamId, comp, basePath }: { teamId: st
 
       <h2 style={{ marginTop: 16 }}>Goals conceded · last 10 matches</h2>
       <GoalBars results={a.last10} kind="conceded" />
+
+      <h2 style={{ marginTop: 16 }}>xG · last 10 matches</h2>
+      <XgBars results={a.last10} xg={a.xgByMatch} />
+      <div className="note">
+        Double-check on <a className="ext" href={`https://www.fotmob.com/search?term=${encodeURIComponent(a.team.name)}`} target="_blank" rel="noopener noreferrer">FotMob</a>
+        {" · "}<a className="ext" href={`https://understat.com/`} target="_blank" rel="noopener noreferrer">Understat</a> (big-5 leagues)
+      </div>
 
       <h2 style={{ marginTop: 16 }}>Last 10 matches</h2>
       <table>
@@ -124,13 +151,13 @@ export default async function TeamPanel({ teamId, comp, basePath }: { teamId: st
               <td>{r.home ? "vs" : "@"} {r.opp}</td>
               <td>{r.gf}-{r.ga}</td>
               <td className="mut">{compName(r.slug)}</td>
-              <td className="mut">{a.xgByMatch[r.id] ? <>{fmt(a.xgByMatch[r.id].v)}{a.xgByMatch[r.id].est && <span title="Estimated from shots (no real xG published)"> ~</span>}</> : "–"}</td>
+              <td className="mut">{a.xgByMatch[r.id] != null ? fmt(a.xgByMatch[r.id]) : "n/a"}</td>
             </tr>
           ))}
           {a.last10.length === 0 && <tr><td colSpan={6} className="mut">No completed matches in this tournament yet.</td></tr>}
         </tbody>
       </table>
-      <div className="note">xG is ESPN&apos;s match xG where published{a.xg ? ` (${a.xg.real} of ${a.xg.matches} matches in scope)` : ""}; a “~” marks matches without published xG, estimated from shots and shots on target. Player ratings are derived from ESPN match stats (goals, assists, shots, saves, clean sheets, cards).</div>
+      <div className="note">xG is ESPN&apos;s published match xG; the model/provider behind it is not documented. Player ratings are derived from ESPN match stats (goals, assists, shots, saves, clean sheets, cards).</div>
 
       <Best title="Best attackers" list={a.best.ATT} kind="ATT" />
       <Best title="Best midfielders" list={a.best.MID} kind="MID" />

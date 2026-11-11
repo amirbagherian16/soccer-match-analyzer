@@ -44,8 +44,8 @@ export type TeamAnalysis = {
   goalsAgainst: number;
   cleanSheets: number;
   last10: Result[];
-  xg: { min: number; avg: number; max: number; matches: number; real: number } | null;
-  xgByMatch: Record<string, { v: number; est: boolean }>;
+  /** Real ESPN xG per match id; missing when ESPN does not publish it. */
+  xgByMatch: Record<string, number>;
   topScorer: PlayerAgg | null;
   best: Record<"ATT" | "MID" | "DEF" | "GK", PlayerAgg[]>;
   competitions: { slug: string; n: number }[];
@@ -56,16 +56,6 @@ const stat = (list: any[] | undefined, name: string): number => {
   const s = list?.find((x) => x.name === name);
   return s ? Number(s.displayValue ?? s.value) || 0 : 0;
 };
-
-/**
- * ESPN does not publish xG, so it is estimated from shot volume/quality:
- * on-target shots are worth more than off-target ones, penalties ~0.76.
- */
-export function estimateXg(shots: number, sot: number, penShots: number): number {
-  const open = Math.max(shots - penShots, 0);
-  const onT = Math.min(sot, open);
-  return +(onT * 0.28 + (open - onT) * 0.04 + penShots * 0.76).toFixed(2);
-}
 
 function groupOf(abbr: string | undefined): PlayerAgg["pos"] {
   if (!abbr) return "UNK";
@@ -131,31 +121,14 @@ export async function analyzeTeam(teamId: string, comp: string): Promise<TeamAna
   const summaries = fetched.map((f) => f.sum);
   const roster = await getRoster(inScope[0]?.slug ?? "all", teamId);
 
-  const xgByMatch: Record<string, { v: number; est: boolean }> = {};
-  const xgs: number[] = [];
-  let realCount = 0;
+  const xgByMatch: Record<string, number> = {};
   const players = new Map<string, PlayerAgg>();
 
   summaries.forEach((sum, idx) => {
     if (!sum) return;
     const r = inScope[idx];
     const real = fetched[idx].xg;
-    if (real != null) {
-      xgByMatch[r.id] = { v: +real.toFixed(2), est: false };
-      xgs.push(real);
-      realCount++;
-    } else {
-      const box = sum.boxscore?.teams?.find((t: any) => String(t.team?.id) === teamId);
-      if (box) {
-        const shots = stat(box.statistics, "totalShots");
-        const sot = stat(box.statistics, "shotsOnTarget");
-        if (shots > 0 || sot > 0) {
-          const xg = estimateXg(shots, sot, stat(box.statistics, "penaltyKickShots"));
-          xgByMatch[r.id] = { v: xg, est: true };
-          xgs.push(xg);
-        }
-      }
-    }
+    if (real != null) xgByMatch[r.id] = +real.toFixed(2);
     const ros = sum.rosters?.find((x: any) => String(x.team?.id) === teamId);
     for (const p of ros?.roster ?? []) {
       const id = String(p.athlete?.id);
@@ -206,15 +179,6 @@ export async function analyzeTeam(teamId: string, comp: string): Promise<TeamAna
     goalsAgainst,
     cleanSheets: scoped.filter((r) => r.ga === 0).length,
     last10: scoped.slice(0, 10),
-    xg: xgs.length
-      ? {
-          min: Math.min(...xgs),
-          max: Math.max(...xgs),
-          avg: +(xgs.reduce((a, b) => a + b, 0) / xgs.length).toFixed(2),
-          matches: xgs.length,
-          real: realCount,
-        }
-      : null,
     xgByMatch,
     topScorer,
     best: { ATT: top("ATT"), MID: top("MID"), DEF: top("DEF"), GK: top("GK") },
