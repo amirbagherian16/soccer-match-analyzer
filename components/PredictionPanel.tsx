@@ -1,5 +1,8 @@
 import { predictMatch, type Probs } from "@/lib/predict";
 import OddsCompare from "./OddsCompare";
+import MyPick from "./MyPick";
+import stored from "@/data/predictions.json";
+import type { Entry } from "@/lib/score";
 
 const pct = (x: number) => `${(x * 100).toFixed(0)}%`;
 
@@ -17,14 +20,19 @@ function Bar({ label, p, home, away }: { label: string; p: Probs; home: string; 
   );
 }
 
-export default async function PredictionPanel(props: { slug: string; date: string; homeId: string; homeName: string; awayId: string; awayName: string; finished: boolean }) {
+export default async function PredictionPanel(props: { matchId: string; comp: string; homeLogo?: string; awayLogo?: string; slug: string; date: string; homeId: string; homeName: string; awayId: string; awayName: string; finished: boolean }) {
   const p = await predictMatch(props);
   if (!p) return <div className="card">Prediction unavailable (could not load team data).</div>;
   const { homeName: H, awayName: A } = props;
+  const locked = (stored as unknown as Entry[]).find((e) => e.id === props.matchId);
+  const aiPick = locked ? { h: locked.ai.h, a: locked.ai.a } : { h: p.pick.h, a: p.pick.a };
 
   return (
     <div className="card">
       <h1 style={{ marginTop: 0 }}>Prediction</h1>
+      <div className="kpis">
+        <div className="kpi"><small>Model exact-score pick{locked ? " (locked)" : " (live, not yet locked)"}</small><b>{aiPick.h} - {aiPick.a}</b></div>
+      </div>
       {props.finished && <div className="note" style={{ marginBottom: 8 }}>Match already played: the model only uses results from before kick-off.</div>}
       <Bar label={p.elo ? "Blend (Poisson + Elo)" : "Poisson model"} p={p.blend} home={H} away={A} />
       {p.elo && (
@@ -66,6 +74,10 @@ export default async function PredictionPanel(props: { slug: string; date: strin
           ]}
         />
       </div>
+      <MyPick
+        match={{ id: props.matchId, slug: props.slug, comp: props.comp, date: props.date, home: H, away: A, homeLogo: props.homeLogo, awayLogo: props.awayLogo }}
+        aiPick={aiPick}
+      />
       <div className="note">For analysis only. Bookmaker odds already price in a lot of information and no model guarantees a profit. Gamble responsibly, only if legal where you live and only with money you can afford to lose.</div>
     </div>
   );

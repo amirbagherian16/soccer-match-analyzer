@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <header className="top">
           <Link href="/"><b>⚽ Soccer Match Analyzer</b></Link>
-          <span className="mut">Live data via ESPN · for analysis only</span>
+          <nav style={{ display: "flex", gap: 14, alignItems: "center" }}><Link href="/">Matches</Link><Link href="/predictions">Predictions</Link></nav>
         </header>
         <main className="wrap">{children}</main>
       </body>

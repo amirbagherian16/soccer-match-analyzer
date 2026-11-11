@@ -15,7 +15,10 @@ export type Prediction = {
   scores: { h: number; a: number; p: number }[];
   sampleH: number;
   sampleA: number;
+  pick: ScorePick;
 };
+
+export type ScorePick = { h: number; a: number; p: number; outcome: "H" | "D" | "A" };
 
 const PRIOR_GOALS = 1.35; // typical goals per team per game
 const PRIOR_WEIGHT = 4; // pseudo-matches pulling small samples toward the prior
@@ -117,6 +120,29 @@ async function leagueElo(slug: string, before: string, homeId: string, awayId: s
   return { ratingH, ratingA, teams: ids.length, probs: eloToProbs(expected(ratingH + ELO_HOME - ratingA)) };
 }
 
+/**
+ * Exact-score pick: take the most likely RESULT from the blended probabilities, then choose the
+ * most likely scoreline (Poisson grid) among scorelines that produce that result.
+ * This avoids always answering 1-1 / 1-0 just because those single cells are individually common.
+ */
+export function pickScore(lambdaH: number, lambdaA: number, blend: Probs): ScorePick {
+  const outcome: "H" | "D" | "A" =
+    blend.h >= blend.d && blend.h >= blend.a ? "H" : blend.a >= blend.d ? "A" : "D";
+  const MAX = 8;
+  const ph = pmf(lambdaH, MAX);
+  const pa = pmf(lambdaA, MAX);
+  let best: ScorePick = { h: 1, a: 1, p: -1, outcome };
+  for (let i = 0; i <= MAX; i++) {
+    for (let j = 0; j <= MAX; j++) {
+      const o = i > j ? "H" : i === j ? "D" : "A";
+      if (o !== outcome) continue;
+      const p = ph[i] * pa[j];
+      if (p > best.p) best = { h: i, a: j, p, outcome };
+    }
+  }
+  return best;
+}
+
 export async function predictMatch(args: {
   slug: string;
   date: string; // ISO match date; only earlier results are used
@@ -156,5 +182,6 @@ export async function predictMatch(args: {
     scores: pm.scores,
     sampleH: rh.n,
     sampleA: ra.n,
+    pick: pickScore(lambdaH, lambdaA, blend),
   };
 }
