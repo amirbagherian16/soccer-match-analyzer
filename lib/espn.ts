@@ -159,3 +159,10 @@ export async function getTeamXg(slug: string, eventId: string, teamId: string): 
   }
   return null;
 }
+
+/** Team ids of a domestic league (used to build league Elo ratings). */
+export async function getLeagueTeamIds(slug: string): Promise<string[]> {
+  const d = await getJson(`${BASE}/${slug}/teams`, 3600);
+  const teams = d?.sports?.[0]?.leagues?.[0]?.teams ?? [];
+  return teams.map((t: any) => String(t.team.id));
+}
