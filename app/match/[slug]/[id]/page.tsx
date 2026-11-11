@@ -3,6 +3,7 @@ import TeamPanel from "@/components/TeamPanel";
 import PredictionPanel from "@/components/PredictionPanel";
 import { getSummary } from "@/lib/espn";
 import { compName } from "@/lib/leagues";
+import { chicagoLabel } from "@/lib/time";
 
 export const revalidate = 60;
 
@@ -18,7 +19,7 @@ export default async function MatchPage({ params, searchParams }: { params: { sl
   return (
     <>
       <div className="card">
-        <div className="mut">{compName(params.slug)} · {c.date?.slice(0, 16).replace("T", " ")} UTC · {c.status?.type?.detail}</div>
+        <div className="mut">{compName(params.slug)} · {chicagoLabel(c.date)} · {c.status?.type?.detail}</div>
         <h1>{home.team.displayName} {c.status?.type?.state === "pre" ? "vs" : `${home.score}-${away.score}`} {away.team.displayName}</h1>
         <div className="note">Click a club name for its full page. Use the chips to switch between this tournament and all tournaments.</div>
       </div>
