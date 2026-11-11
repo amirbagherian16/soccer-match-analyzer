@@ -22,21 +22,29 @@ function FormBox({ label, f }: { label: string; f: Form }) {
   );
 }
 
-function GoalBars({ results }: { results: Result[] }) {
+function GoalBars({ results, kind }: { results: Result[]; kind: "scored" | "conceded" }) {
   const list = [...results].reverse(); // oldest -> newest
-  const max = Math.max(4, ...list.map((r) => r.gf));
+  const val = (r: Result) => (kind === "scored" ? r.gf : r.ga);
+  const isHot = (n: number) => (kind === "scored" ? n >= 3 : n <= 1);
+  const max = Math.max(4, ...list.map(val));
   return (
     <>
       <div className="bars">
         {list.map((r) => (
           <div key={r.id} className="barcol" title={`${r.date.slice(0, 10)} ${r.home ? "vs" : "@"} ${r.opp}: ${r.gf}-${r.ga}`}>
-            <span className="barval">{r.gf}</span>
-            <div className={`bar ${r.gf >= 3 ? "hot" : ""}`} style={{ height: `${Math.max((r.gf / max) * 100, 3)}%` }} />
+            <span className="barval">{val(r)}</span>
+            <div className={`bar ${isHot(val(r)) ? (kind === "scored" ? "hot" : "cool") : ""}`} style={{ height: `${Math.max((val(r) / max) * 100, 3)}%` }} />
             <span className="barlbl">{r.opp.slice(0, 3).toUpperCase()}</span>
           </div>
         ))}
       </div>
-      <div className="note"><span className="dot hot" /> 3 or more goals scored <span className="dot" style={{ marginLeft: 10 }} /> fewer than 3 · oldest → newest</div>
+      <div className="note">
+        {kind === "scored" ? (
+          <><span className="dot hot" /> 3 or more goals scored <span className="dot" style={{ marginLeft: 10 }} /> fewer than 3</>
+        ) : (
+          <><span className="dot cool" /> 0 or 1 goal conceded <span className="dot" style={{ marginLeft: 10 }} /> 2 or more</>
+        )}{" "}· oldest → newest
+      </div>
     </>
   );
 }
@@ -100,7 +108,10 @@ export default async function TeamPanel({ teamId, comp, basePath }: { teamId: st
       </div>
 
       <h2>Goals scored · last 10 matches</h2>
-      <GoalBars results={a.last10} />
+      <GoalBars results={a.last10} kind="scored" />
+
+      <h2 style={{ marginTop: 16 }}>Goals conceded · last 10 matches</h2>
+      <GoalBars results={a.last10} kind="conceded" />
 
       <h2 style={{ marginTop: 16 }}>Last 10 matches</h2>
       <table>
