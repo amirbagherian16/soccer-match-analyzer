@@ -25,8 +25,8 @@ export default async function MatchPage({ params, searchParams }: { params: { sl
       <PredictionPanel
         matchId={params.id}
         comp={compName(params.slug)}
-        homeLogo={home.team.logo}
-        awayLogo={away.team.logo}
+        homeLogo={home.team.logo ?? home.team.logos?.[0]?.href}
+        awayLogo={away.team.logo ?? away.team.logos?.[0]?.href}
         slug={params.slug}
         date={c.date}
         homeId={String(home.team.id)}
