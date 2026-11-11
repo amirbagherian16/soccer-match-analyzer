@@ -22,53 +22,51 @@ function FormBox({ label, f }: { label: string; f: Form }) {
   );
 }
 
+type Col = { r: Result; v: number | undefined; hot: string };
+
+function BarChart({ cols, max, note, dec = false }: { cols: Col[]; max: number; note: React.ReactNode; dec?: boolean }) {
+  return (
+    <>
+      <div className="bars">
+        {cols.map(({ r, v, hot }) => (
+          <div key={r.id} className="barcol" title={`${r.date.slice(0, 10)} ${r.home ? "vs" : "@"} ${r.opp}: ${r.gf}-${r.ga}`}>
+            <span className="barval">{v != null ? (dec ? v.toFixed(2) : fmt1(v)) : "n/a"}</span>
+            <div className="barwrap">
+              <div className={`bar ${hot}`} style={{ height: `${v != null ? Math.max((v / max) * 100, 3) : 0}%` }} />
+            </div>
+            <span className={`pill ${r.outcome}`}>{r.outcome}</span>
+            <span className="barscore">{r.gf}-{r.ga}</span>
+            {r.oppLogo ? <img className="barlogo" src={r.oppLogo} alt={r.opp} /> : <span className="barlbl">{r.opp.slice(0, 3).toUpperCase()}</span>}
+          </div>
+        ))}
+      </div>
+      <div className="note">{note} · oldest → newest</div>
+    </>
+  );
+}
+
+const fmt1 = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(2));
+
 function GoalBars({ results, kind }: { results: Result[]; kind: "scored" | "conceded" }) {
   const list = [...results].reverse(); // oldest -> newest
   const val = (r: Result) => (kind === "scored" ? r.gf : r.ga);
   const isHot = (n: number) => (kind === "scored" ? n >= 3 : n <= 1);
   const max = Math.max(4, ...list.map(val));
-  return (
-    <>
-      <div className="bars">
-        {list.map((r) => (
-          <div key={r.id} className="barcol" title={`${r.date.slice(0, 10)} ${r.home ? "vs" : "@"} ${r.opp}: ${r.gf}-${r.ga}`}>
-            <span className="barval">{val(r)}</span>
-            <div className={`bar ${isHot(val(r)) ? (kind === "scored" ? "hot" : "cool") : ""}`} style={{ height: `${Math.max((val(r) / max) * 100, 3)}%` }} />
-            <span className="barlbl">{r.opp.slice(0, 3).toUpperCase()}</span>
-          </div>
-        ))}
-      </div>
-      <div className="note">
-        {kind === "scored" ? (
-          <><span className="dot hot" /> 3 or more goals scored <span className="dot" style={{ marginLeft: 10 }} /> fewer than 3</>
-        ) : (
-          <><span className="dot cool" /> 0 or 1 goal conceded <span className="dot" style={{ marginLeft: 10 }} /> 2 or more</>
-        )}{" "}· oldest → newest
-      </div>
-    </>
-  );
+  const cols = list.map((r) => ({ r, v: val(r), hot: isHot(val(r)) ? (kind === "scored" ? "hot" : "cool") : "" }));
+  const note =
+    kind === "scored" ? (
+      <><span className="dot hot" /> 3 or more goals scored <span className="dot" style={{ marginLeft: 10 }} /> fewer than 3</>
+    ) : (
+      <><span className="dot cool" /> 0 or 1 goal conceded <span className="dot" style={{ marginLeft: 10 }} /> 2 or more</>
+    );
+  return <BarChart cols={cols} max={max} note={note} />;
 }
 
 function XgBars({ results, xg }: { results: Result[]; xg: Record<string, number> }) {
   const list = [...results].reverse();
   const max = Math.max(3, ...list.map((r) => xg[r.id] ?? 0));
-  return (
-    <>
-      <div className="bars">
-        {list.map((r) => {
-          const v = xg[r.id];
-          return (
-            <div key={r.id} className="barcol" title={`${r.date.slice(0, 10)} ${r.home ? "vs" : "@"} ${r.opp}: xG ${v != null ? fmt(v) : "n/a"}`}>
-              <span className="barval">{v != null ? fmt(v) : "n/a"}</span>
-              <div className="bar xg" style={{ height: `${v != null ? Math.max((v / max) * 100, 3) : 0}%` }} />
-              <span className="barlbl">{r.opp.slice(0, 3).toUpperCase()}</span>
-            </div>
-          );
-        })}
-      </div>
-      <div className="note">ESPN xG per match, oldest → newest. “n/a” = ESPN does not publish xG for that match.</div>
-    </>
-  );
+  const cols = list.map((r) => ({ r, v: xg[r.id], hot: "xg" }));
+  return <BarChart dec cols={cols} max={max} note={<>ESPN xG per match (“n/a” = not published)</>} />;
 }
 
 function Best({ title, list, kind }: { title: string; list: PlayerAgg[]; kind: "ATT" | "MID" | "DEF" | "GK" }) {
