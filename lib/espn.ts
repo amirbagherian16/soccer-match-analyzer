@@ -63,6 +63,7 @@ export type Result = {
   home: boolean;
   oppId: string;
   opp: string;
+  oppLogo?: string;
   gf: number;
   ga: number;
   outcome: "W" | "D" | "L";
@@ -108,6 +109,7 @@ export async function getTeamSchedule(teamId: string): Promise<TeamSchedule | nu
         home: me.homeAway === "home",
         oppId: String(opp.team?.id ?? opp.id),
         opp: opp.team?.displayName ?? "Opponent",
+        oppLogo: opp.team?.logo ?? opp.team?.logos?.[0]?.href,
         gf,
         ga,
         outcome: gf > ga ? "W" : gf < ga ? "L" : "D",
