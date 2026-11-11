@@ -7,7 +7,7 @@ Dynamic Next.js site that lists club and national-team matches and, for each mat
 ## What it shows (per club, per tournament or all tournaments)
 - Current streak, unbeaten and winless runs
 - Goals scored and conceded, last 10 matches
-- Average / min / max xG (**estimated** from shots and shots on target, because ESPN does not publish true xG)
+- Average / min / max xG (ESPN match xG; shot-based estimate only where ESPN has none)
 - Clean sheets, matches with 4+ goals scored, top scorer
 - Best attackers, midfielders, defenders and goalkeepers (rating derived from ESPN match stats)
 

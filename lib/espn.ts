@@ -143,3 +143,17 @@ export async function getRoster(slug: string, teamId: string): Promise<Map<strin
   }
   return out;
 }
+
+/** Real expected goals for one team in one match (null when ESPN has none). */
+export async function getTeamXg(slug: string, eventId: string, teamId: string): Promise<number | null> {
+  const d = await getJson(
+    `https://sports.core.api.espn.com/v2/sports/soccer/leagues/${slug}/events/${eventId}/competitions/${eventId}/competitors/${teamId}/statistics`,
+    86400,
+  );
+  for (const cat of d?.splits?.categories ?? []) {
+    for (const st of cat.stats ?? []) {
+      if (st.name === "expectedGoals" && typeof st.value === "number") return st.value;
+    }
+  }
+  return null;
+}
