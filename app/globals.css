@@ -34,3 +34,5 @@ table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:6px 4px;b
 .dot{display:inline-block;width:10px;height:10px;border-radius:3px;background:#3a4556;vertical-align:-1px}.dot.hot{background:#ff3d9a}
 .bar.cool{background:linear-gradient(180deg,#19f0c3,#1aa7ff);box-shadow:0 0 14px rgba(25,240,195,.5)}
 .dot.cool{background:#19f0c3}
+.bar.xg{background:linear-gradient(180deg,#7aa2ff,#4d6bff)}
+a.ext{color:var(--acc);text-decoration:underline}
