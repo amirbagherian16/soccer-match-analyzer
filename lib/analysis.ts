@@ -1,29 +1,18 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { getRoster, getSummary, getTeamSchedule, type Result, type TeamRef } from "./espn";
+import { getRoster, getSummary, getTeamSchedule, getTeamXg, type Result, type TeamRef } from "./espn";
 import { isFriendly } from "./leagues";
 
-export type Streak = { label: string; unbeaten: number; winless: number };
+export type Form = { last5: Result[]; w: number; d: number; l: number };
 
-export function streakOf(results: Result[]): Streak {
-  // results newest first
-  if (!results.length) return { label: "-", unbeaten: 0, winless: 0 };
-  const first = results[0].outcome;
-  let n = 0;
-  for (const r of results) {
-    if (r.outcome === first) n++;
-    else break;
-  }
-  let unbeaten = 0;
-  for (const r of results) {
-    if (r.outcome !== "L") unbeaten++;
-    else break;
-  }
-  let winless = 0;
-  for (const r of results) {
-    if (r.outcome !== "W") winless++;
-    else break;
-  }
-  return { label: `${first}${n}`, unbeaten, winless };
+/** Results are newest first. */
+export function formOf(results: Result[], n = 5): Form {
+  const last5 = results.slice(0, n);
+  return {
+    last5,
+    w: last5.filter((r) => r.outcome === "W").length,
+    d: last5.filter((r) => r.outcome === "D").length,
+    l: last5.filter((r) => r.outcome === "L").length,
+  };
 }
 
 export type PlayerAgg = {
@@ -49,15 +38,14 @@ export type TeamAnalysis = {
   team: TeamRef;
   comp: string; // slug or "all"
   played: number;
-  streakComp: Streak;
-  streakAll: Streak;
+  formComp: Form;
+  formAll: Form;
   goalsFor: number;
   goalsAgainst: number;
   cleanSheets: number;
-  over3: number; // matches where the team scored more than 3 goals
   last10: Result[];
-  xg: { min: number; avg: number; max: number; matches: number } | null;
-  xgByMatch: Record<string, number>;
+  xg: { min: number; avg: number; max: number; matches: number; real: number } | null;
+  xgByMatch: Record<string, { v: number; est: boolean }>;
   topScorer: PlayerAgg | null;
   best: Record<"ATT" | "MID" | "DEF" | "GK", PlayerAgg[]>;
   competitions: { slug: string; n: number }[];
@@ -136,25 +124,36 @@ export async function analyzeTeam(teamId: string, comp: string): Promise<TeamAna
   const goalsFor = scoped.reduce((s, r) => s + r.gf, 0);
   const goalsAgainst = scoped.reduce((s, r) => s + r.ga, 0);
 
-  const summaries = await mapLimit(inScope, 6, (r) => getSummary(r.slug, r.id));
+  const fetched = await mapLimit(inScope, 6, async (r) => ({
+    sum: await getSummary(r.slug, r.id),
+    xg: await getTeamXg(r.slug, r.id, teamId),
+  }));
+  const summaries = fetched.map((f) => f.sum);
   const roster = await getRoster(inScope[0]?.slug ?? "all", teamId);
 
-  const xgByMatch: Record<string, number> = {};
+  const xgByMatch: Record<string, { v: number; est: boolean }> = {};
   const xgs: number[] = [];
+  let realCount = 0;
   const players = new Map<string, PlayerAgg>();
 
   summaries.forEach((sum, idx) => {
     if (!sum) return;
     const r = inScope[idx];
-    const box = sum.boxscore?.teams?.find((t: any) => String(t.team?.id) === teamId);
-    if (box) {
-      const shots = stat(box.statistics, "totalShots");
-      const sot = stat(box.statistics, "shotsOnTarget");
-      const pens = stat(box.statistics, "penaltyKickShots");
-      if (shots > 0 || sot > 0) {
-        const xg = estimateXg(shots, sot, pens);
-        xgByMatch[r.id] = xg;
-        xgs.push(xg);
+    const real = fetched[idx].xg;
+    if (real != null) {
+      xgByMatch[r.id] = { v: +real.toFixed(2), est: false };
+      xgs.push(real);
+      realCount++;
+    } else {
+      const box = sum.boxscore?.teams?.find((t: any) => String(t.team?.id) === teamId);
+      if (box) {
+        const shots = stat(box.statistics, "totalShots");
+        const sot = stat(box.statistics, "shotsOnTarget");
+        if (shots > 0 || sot > 0) {
+          const xg = estimateXg(shots, sot, stat(box.statistics, "penaltyKickShots"));
+          xgByMatch[r.id] = { v: xg, est: true };
+          xgs.push(xg);
+        }
       }
     }
     const ros = sum.rosters?.find((x: any) => String(x.team?.id) === teamId);
@@ -201,12 +200,11 @@ export async function analyzeTeam(teamId: string, comp: string): Promise<TeamAna
     team: sched.team,
     comp,
     played: scoped.length,
-    streakComp: streakOf(scoped),
-    streakAll: streakOf(all),
+    formComp: formOf(scoped),
+    formAll: formOf(all),
     goalsFor,
     goalsAgainst,
     cleanSheets: scoped.filter((r) => r.ga === 0).length,
-    over3: scoped.filter((r) => r.gf > 3).length,
     last10: scoped.slice(0, 10),
     xg: xgs.length
       ? {
@@ -214,6 +212,7 @@ export async function analyzeTeam(teamId: string, comp: string): Promise<TeamAna
           max: Math.max(...xgs),
           avg: +(xgs.reduce((a, b) => a + b, 0) / xgs.length).toFixed(2),
           matches: xgs.length,
+          real: realCount,
         }
       : null,
     xgByMatch,
