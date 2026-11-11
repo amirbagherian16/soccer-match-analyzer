@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { judge, label, outcomeOf, type Entry } from "@/lib/score";
 import { loadPicks, replaceAll, type UserPick } from "@/lib/local";
+import { chicagoLabel } from "@/lib/time";
 
 type Row = {
   id: string; slug: string; comp: string; date: string;
@@ -150,7 +151,7 @@ export default function PredictionsTable({ entries }: { entries: Entry[] }) {
         <table>
           <thead>
             <tr>
-              <th>Date (UTC)</th><th>Competition</th><th>Match</th>
+              <th>Kick-off (US Central)</th><th>Competition</th><th>Match</th>
               <th>Model</th><th>You</th><th>Actual</th>
               <th title="Model exact score">M score</th><th title="Model result">M W/D/L</th>
               <th title="Your exact score">Y score</th><th title="Your result">Y W/D/L</th>
@@ -162,7 +163,7 @@ export default function PredictionsTable({ entries }: { entries: Entry[] }) {
               const jy = judge(r.me, r.result);
               return (
                 <tr key={r.id}>
-                  <td className="mut">{r.date.slice(0, 16).replace("T", " ")}</td>
+                  <td className="mut">{chicagoLabel(r.date)}</td>
                   <td className="mut">{r.comp}</td>
                   <td><a href={`/match/${r.slug}/${r.id}`}>{r.home} v {r.away}</a></td>
                   <td>{sc(r.ai)} <span className="mut">{wdl(r.ai)}</span></td>

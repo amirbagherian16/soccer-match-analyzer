@@ -49,3 +49,17 @@ a.ext{color:var(--acc);text-decoration:underline}
 .seg.h{background:#3ddc97}.seg.d{background:#e0b341}.seg.a{background:#7aa2ff}
 .stacklbl{display:flex;justify-content:space-between;color:var(--mut);font-size:12px;margin-top:3px}
 input:focus{outline:1px solid var(--acc)}
+
+.row{grid-template-columns:78px 1fr 62px 1fr 96px 130px}
+.row.head{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.04em;padding:2px 0 6px;border-top:0}
+.row.head .r{text-align:right}.row.head:hover{background:none}
+.tcell{display:flex;flex-direction:column;line-height:1.2}.tcell small,.score small{font-size:11px;color:var(--mut);font-weight:400}
+.score{display:flex;flex-direction:column;align-items:center;line-height:1.2}
+.pickcell{display:flex;align-items:center;gap:5px;white-space:nowrap}
+.pickcell .pl{display:none}
+@media(max-width:800px){
+  .row{grid-template-columns:64px 1fr 48px 1fr}
+  .row.head span:nth-child(n+5){display:none}
+  .pickcell{grid-column:1/-1;padding-left:4px}
+  .pickcell .pl{display:inline;width:42px}
+}
