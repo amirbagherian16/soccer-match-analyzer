@@ -21,3 +21,10 @@ npm run dev   # http://localhost:3000
 ```
 
 For analysis only. ESPN data is unofficial and may change; check the terms of use before commercial use. Please gamble responsibly.
+
+## Predictions tracker
+- Each match page shows the model's exact-score pick (most likely result from the Poisson/Elo blend, then the likeliest scoreline for that result) and lets you submit your own score before kick-off.
+- `.github/workflows/predictions.yml` runs every 6 hours: it locks picks for tomorrow's matches and records final scores, committing `data/predictions.json`.
+- The **Predictions** tab filters by competition, status, team and who picked, and marks exact-score and W/D/L hits for the model and for you.
+- Your picks are stored in your browser (localStorage). Use Export/Import to move them between devices.
+- Run the job manually: `npx tsx scripts/update.ts [YYYYMMDD]`.

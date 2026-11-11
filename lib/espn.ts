@@ -2,14 +2,24 @@
 const BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
+// Short in-process memo so one render (or the daily script) never refetches the same URL.
+const memo = new Map<string, { t: number; p: Promise<any | null> }>();
+
 async function getJson(url: string, revalidate: number): Promise<any | null> {
-  try {
-    const res = await fetch(url, { next: { revalidate } });
-    if (!res.ok) return null;
-    return await res.json();
-  } catch {
-    return null;
-  }
+  const ttl = Math.min(revalidate * 1000, 120_000);
+  const hit = memo.get(url);
+  if (hit && Date.now() - hit.t < ttl) return hit.p;
+  const p = (async () => {
+    try {
+      const res = await fetch(url, { next: { revalidate } });
+      if (!res.ok) return null;
+      return await res.json();
+    } catch {
+      return null;
+    }
+  })();
+  memo.set(url, { t: Date.now(), p });
+  return p;
 }
 
 const num = (v: any): number => {
@@ -165,4 +175,23 @@ export async function getLeagueTeamIds(slug: string): Promise<string[]> {
   const d = await getJson(`${BASE}/${slug}/teams`, 3600);
   const teams = d?.sports?.[0]?.leagues?.[0]?.teams ?? [];
   return teams.map((t: any) => String(t.team.id));
+}
+
+/** Final score of a match (home/away), fresh enough to resolve predictions. */
+export async function getResult(
+  slug: string,
+  eventId: string,
+): Promise<{ completed: boolean; state: string; h: number; a: number } | null> {
+  const d = await getJson(`${BASE}/${slug}/summary?event=${eventId}`, 120);
+  const c = d?.header?.competitions?.[0];
+  if (!c) return null;
+  const home = c.competitors?.find((x: any) => x.homeAway === "home");
+  const away = c.competitors?.find((x: any) => x.homeAway === "away");
+  if (!home || !away) return null;
+  return {
+    completed: c.status?.type?.completed === true,
+    state: c.status?.type?.state ?? "pre",
+    h: num(home.score),
+    a: num(away.score),
+  };
 }

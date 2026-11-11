@@ -23,6 +23,10 @@ export default async function MatchPage({ params, searchParams }: { params: { sl
         <div className="note">Click a club name for its full page. Use the chips to switch between this tournament and all tournaments.</div>
       </div>
       <PredictionPanel
+        matchId={params.id}
+        comp={compName(params.slug)}
+        homeLogo={home.team.logo}
+        awayLogo={away.team.logo}
         slug={params.slug}
         date={c.date}
         homeId={String(home.team.id)}
