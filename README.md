@@ -31,8 +31,9 @@ For analysis only. ESPN data is unofficial and may change; check the terms of us
 - Run the job manually: `npx tsx scripts/update.ts [YYYYMMDD]`.
 
 ## Pick storage setup (one time, free)
-1. Vercel dashboard > your project > **Storage** > **Create Database** > **Upstash** (Redis) > free plan > connect it to the project. This adds `KV_REST_API_URL` and `KV_REST_API_TOKEN` automatically.
-2. Project > **Settings > Environment Variables**: add `PICKS_PASSCODE` (any secret). Without it, anyone who finds the site could add picks.
-3. **Redeploy**. The first time you save a pick in a browser it asks for the passcode and remembers it there.
+1. Connect a free Upstash Redis database to the Vercel project (Storage / Marketplace > Upstash). This adds `KV_REST_API_URL`/`KV_REST_API_TOKEN` (or `UPSTASH_REDIS_REST_URL`/`UPSTASH_REDIS_REST_TOKEN`) automatically. Pushing to `main` redeploys with them.
+2. The first time you save a pick the site asks you to choose a passcode. It is stored hashed in the database and asked once per browser. (Optionally set a `PICKS_PASSCODE` environment variable instead.)
+
+To reset the passcode, delete the `sma:pass` key in the Upstash console.
 
 Picks are locked at kick-off (the server rejects late edits and deletes).
