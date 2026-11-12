@@ -70,6 +70,7 @@ export default async function PredictionPanel(props: { matchId: string; comp: st
 
       <div style={{ marginTop: 14 }}>
         <OddsCompare
+          match={{ slug: props.slug, home: H, away: A, date: props.date }}
           outcomes={[
             { key: "h", label: `${H} win`, p: p.blend.h },
             { key: "d", label: "Draw", p: p.blend.d },

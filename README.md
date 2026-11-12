@@ -37,3 +37,6 @@ For analysis only. ESPN data is unofficial and may change; check the terms of us
 To reset the passcode, delete the `sma:pass` key in the Upstash console.
 
 Picks are locked at kick-off (the server rejects late edits and deletes).
+
+## Kalshi odds
+Match pages read Kalshi's public market data (no key) for the same game: match result (`KX<LEAGUE>GAME`), plus over 2.5 goals and both-teams-to-score when the market is liquid. Games are matched to ESPN fixtures by team names and date. A button fills the odds comparison with Kalshi buy prices (1 / ask, before fees). Kalshi series exist for the main leagues, European cups, domestic cups, Nations League, friendlies and the World Cup; markets usually appear a few days before kick-off.
