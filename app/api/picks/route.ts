@@ -1,19 +1,25 @@
 import { NextResponse } from "next/server";
 import { timingSafeEqual } from "node:crypto";
-import { allPicks, countPicks, delPick, getPick, needsPasscode, setPick, storeConfigured } from "@/lib/store";
+import { allPicks, checkStoredPasscode, countPicks, delPick, getPick, hasStoredPasscode, needsPasscode, setPick, storeConfigured } from "@/lib/store";
 import { getResult } from "@/lib/espn";
 import type { UserPick } from "@/lib/score";
 
 export const dynamic = "force-dynamic";
 const noStore = { "Cache-Control": "no-store" };
 
-function authorized(req: Request): boolean {
-  const want = process.env.PICKS_PASSCODE;
-  if (!want) return true;
+async function authorized(req: Request): Promise<boolean> {
   const got = req.headers.get("x-passcode") ?? "";
-  const a = Buffer.from(got);
-  const b = Buffer.from(want);
-  return a.length === b.length && timingSafeEqual(a, b);
+  const want = process.env.PICKS_PASSCODE;
+  if (want) {
+    const a = Buffer.from(got);
+    const b = Buffer.from(want);
+    return a.length === b.length && timingSafeEqual(a, b);
+  }
+  try {
+    return await checkStoredPasscode(got);
+  } catch {
+    return false;
+  }
 }
 
 const str = (v: unknown, max: number) => (typeof v === "string" && v.length > 0 && v.length <= max ? v : null);
@@ -34,17 +40,18 @@ function clean(b: any): UserPick | null {
 }
 
 export async function GET() {
-  if (!storeConfigured) return NextResponse.json({ configured: false, needsPasscode, picks: {} }, { headers: noStore });
+  if (!storeConfigured) return NextResponse.json({ configured: false, needsPasscode: false, picks: {} }, { headers: noStore });
   try {
-    return NextResponse.json({ configured: true, needsPasscode, picks: await allPicks() }, { headers: noStore });
+    const needs = needsPasscode || (await hasStoredPasscode());
+    return NextResponse.json({ configured: true, needsPasscode: needs, picks: await allPicks() }, { headers: noStore });
   } catch {
-    return NextResponse.json({ configured: false, needsPasscode, picks: {}, error: "store unavailable" }, { headers: noStore });
+    return NextResponse.json({ configured: false, needsPasscode: false, picks: {}, error: "store unavailable" }, { headers: noStore });
   }
 }
 
 export async function POST(req: Request) {
   if (!storeConfigured) return NextResponse.json({ error: "Pick storage is not set up" }, { status: 503 });
-  if (!authorized(req)) return NextResponse.json({ error: "Wrong or missing passcode" }, { status: 401 });
+  if (!(await authorized(req))) return NextResponse.json({ error: "Wrong or missing passcode" }, { status: 401 });
   const body = await req.json().catch(() => null);
   const pick = clean(body?.pick);
   if (!pick) return NextResponse.json({ error: "Invalid pick" }, { status: 400 });
@@ -71,7 +78,7 @@ export async function POST(req: Request) {
 
 export async function DELETE(req: Request) {
   if (!storeConfigured) return NextResponse.json({ error: "Pick storage is not set up" }, { status: 503 });
-  if (!authorized(req)) return NextResponse.json({ error: "Wrong or missing passcode" }, { status: 401 });
+  if (!(await authorized(req))) return NextResponse.json({ error: "Wrong or missing passcode" }, { status: 401 });
   const id = new URL(req.url).searchParams.get("id") ?? "";
   if (!/^\d{3,12}$/.test(id)) return NextResponse.json({ error: "Invalid id" }, { status: 400 });
   try {

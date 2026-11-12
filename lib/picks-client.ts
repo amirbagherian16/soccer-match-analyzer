@@ -59,7 +59,27 @@ async function send(method: "POST" | "DELETE", url: string, body?: unknown, retr
   return res.ok ? { ok: true } : { ok: false, error: j.error ?? `Error ${res.status}` };
 }
 
+/** First save ever: offer to create the passcode that protects your picks (stored hashed on the server). */
+async function claimPasscodeIfNeeded() {
+  if (!snap?.status.configured || snap.status.needsPasscode || pass()) return;
+  try {
+    if (sessionStorage.getItem("sma:askedpass")) return;
+    sessionStorage.setItem("sma:askedpass", "1");
+  } catch { /* ignore */ }
+  const entered = window.prompt("First time here: choose a passcode (4+ characters) to protect your picks. You will enter it once in each browser.");
+  if (!entered) return;
+  const res = await fetch("/api/picks/passcode", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ passcode: entered }) });
+  if (res.ok) {
+    setPass(entered);
+    snap.status.needsPasscode = true;
+  } else {
+    const j = await res.json().catch(() => ({}));
+    window.alert(j.error ?? "Could not set the passcode");
+  }
+}
+
 export async function savePick(p: Omit<UserPick, "savedAt"> & { savedAt?: string }, opts: { import?: boolean } = {}) {
+  await claimPasscodeIfNeeded();
   const r = await send("POST", "/api/picks", { pick: p, import: opts.import === true });
   if (r.ok && snap) {
     snap.picks[p.id] = { ...p, savedAt: p.savedAt ?? new Date().toISOString() };
@@ -69,6 +89,7 @@ export async function savePick(p: Omit<UserPick, "savedAt"> & { savedAt?: string
 }
 
 export async function deletePick(id: string) {
+  await claimPasscodeIfNeeded();
   const r = await send("DELETE", `/api/picks?id=${encodeURIComponent(id)}`);
   if (r.ok && snap) {
     delete snap.picks[id];

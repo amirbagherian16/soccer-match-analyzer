@@ -53,3 +53,28 @@ export async function countPicks(): Promise<number> {
 
 export const setPick = (p: UserPick) => cmd(["HSET", KEY, p.id, JSON.stringify(p)]);
 export const delPick = (id: string) => cmd(["HDEL", KEY, id]);
+
+// ----- passcode set from the website itself (no Vercel setting needed) -----
+import { randomBytes, scryptSync, timingSafeEqual } from "node:crypto";
+const PASS_KEY = "sma:pass";
+
+export async function hasStoredPasscode(): Promise<boolean> {
+  return Boolean(await cmd(["GET", PASS_KEY]));
+}
+
+/** Claim the passcode if none exists yet (atomic). Returns false when one is already set. */
+export async function claimPasscode(passcode: string): Promise<boolean> {
+  const salt = randomBytes(16).toString("hex");
+  const hash = scryptSync(passcode, salt, 32).toString("hex");
+  const r = await cmd(["SET", PASS_KEY, `${salt}:${hash}`, "NX"]);
+  return r === "OK";
+}
+
+export async function checkStoredPasscode(passcode: string): Promise<boolean> {
+  const v = await cmd(["GET", PASS_KEY]);
+  if (!v || typeof v !== "string") return true; // nothing claimed yet: open until the first passcode is created
+  const [salt, hash] = v.split(":");
+  const got = scryptSync(passcode, salt, 32);
+  const want = Buffer.from(hash, "hex");
+  return got.length === want.length && timingSafeEqual(got, want);
+}
