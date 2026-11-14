@@ -1,5 +1,1030 @@
 [
  {
+  "id": "401861176",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-15T19:45Z",
+  "homeId": "459",
+  "home": "Belgium",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+  "awayId": "162",
+  "away": "Italy",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ita.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0841,
+   "probs": {
+    "h": 0.3961,
+    "d": 0.23,
+    "a": 0.3739
+   },
+   "lambdaH": 1.679,
+   "lambdaA": 1.626,
+   "madeAt": "2026-11-14T01:19:20.057Z"
+  }
+ },
+ {
+  "id": "401861178",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-15T19:45Z",
+  "homeId": "477",
+  "home": "Croatia",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+  "awayId": "450",
+  "away": "Czechia",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0901,
+   "probs": {
+    "h": 0.4393,
+    "d": 0.2343,
+    "a": 0.3263
+   },
+   "lambdaH": 1.705,
+   "lambdaA": 1.442,
+   "madeAt": "2026-11-14T01:19:20.185Z"
+  }
+ },
+ {
+  "id": "401861177",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-15T19:45Z",
+  "homeId": "478",
+  "home": "France",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+  "awayId": "465",
+  "away": "Türkiye",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0962,
+   "probs": {
+    "h": 0.5275,
+    "d": 0.2205,
+    "a": 0.2519
+   },
+   "lambdaH": 1.942,
+   "lambdaA": 1.284,
+   "madeAt": "2026-11-14T01:19:20.294Z"
+  }
+ },
+ {
+  "id": "401861175",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-15T19:45Z",
+  "homeId": "164",
+  "home": "Spain",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+  "awayId": "448",
+  "away": "England",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0851,
+   "probs": {
+    "h": 0.3931,
+    "d": 0.2364,
+    "a": 0.3705
+   },
+   "lambdaH": 1.6,
+   "lambdaA": 1.547,
+   "madeAt": "2026-11-14T01:19:20.371Z"
+  }
+ },
+ {
+  "id": "401861173",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-15T17:00Z",
+  "homeId": "583",
+  "home": "Belarus",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/blr.png",
+  "awayId": "585",
+  "away": "Albania",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alb.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.135,
+   "probs": {
+    "h": 0.2549,
+    "d": 0.2725,
+    "a": 0.4726
+   },
+   "lambdaH": 0.942,
+   "lambdaA": 1.389,
+   "madeAt": "2026-11-14T01:19:19.564Z"
+  }
+ },
+ {
+  "id": "401861174",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-15T17:00Z",
+  "homeId": "458",
+  "home": "Finland",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fin.png",
+  "awayId": "588",
+  "away": "San Marino",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/smr.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0977,
+   "probs": {
+    "h": 0.6574,
+    "d": 0.1872,
+    "a": 0.1554
+   },
+   "lambdaH": 2.284,
+   "lambdaA": 1.021,
+   "madeAt": "2026-11-14T01:19:19.777Z"
+  }
+ },
+ {
+  "id": "401933837",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-15T17:00Z",
+  "homeId": "2664",
+  "home": "Suriname",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sur.png",
+  "awayId": "6686",
+  "away": "Eswatini",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swz.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1125,
+   "probs": {
+    "h": 0.4825,
+    "d": 0.254,
+    "a": 0.2634
+   },
+   "lambdaH": 1.547,
+   "lambdaA": 1.074,
+   "madeAt": "2026-11-14T01:19:21.203Z"
+  }
+ },
+ {
+  "id": "401932736",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T14:00Z",
+  "homeId": "134096",
+  "home": "Atlas Paillade",
+  "homeLogo": "",
+  "awayId": "21306",
+  "away": "AS Cannes",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:17.429Z"
+  }
+ },
+ {
+  "id": "401932735",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T14:00Z",
+  "homeId": "20871",
+  "home": "Rumilly Vallières",
+  "homeLogo": "",
+  "awayId": "178",
+  "away": "Saint-Étienne",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/178.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.0908,
+   "probs": {
+    "h": 0.3315,
+    "d": 0.2515,
+    "a": 0.417
+   },
+   "lambdaH": 1.306,
+   "lambdaA": 1.495,
+   "madeAt": "2026-11-14T01:19:17.505Z"
+  }
+ },
+ {
+  "id": "401861172",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-15T14:00Z",
+  "homeId": "445",
+  "home": "Cyprus",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cyp.png",
+  "awayId": "6775",
+  "away": "Montenegro",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mtg.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0888,
+   "probs": {
+    "h": 0.4038,
+    "d": 0.2519,
+    "a": 0.3443
+   },
+   "lambdaH": 1.468,
+   "lambdaA": 1.337,
+   "madeAt": "2026-11-14T01:19:19.222Z"
+  }
+ },
+ {
+  "id": "401861171",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-15T14:00Z",
+  "homeId": "456",
+  "home": "Latvia",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/lva.png",
+  "awayId": "579",
+  "away": "Armenia",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fifa.armenia.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1031,
+   "probs": {
+    "h": 0.4448,
+    "d": 0.2559,
+    "a": 0.2993
+   },
+   "lambdaH": 1.495,
+   "lambdaA": 1.179,
+   "madeAt": "2026-11-14T01:19:19.457Z"
+  }
+ },
+ {
+  "id": "401932774",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:30Z",
+  "homeId": "134083",
+  "home": "Perros-Louannec",
+  "homeLogo": "",
+  "awayId": "7574",
+  "away": "Vannes OC",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:17.285Z"
+  }
+ },
+ {
+  "id": "401932799",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:30Z",
+  "homeId": "134099",
+  "home": "Stade Sotteville",
+  "homeLogo": "",
+  "awayId": "134104",
+  "away": "USF Fecamp",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:17.350Z"
+  }
+ },
+ {
+  "id": "401932823",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134123",
+  "home": "Chatou",
+  "homeLogo": "",
+  "awayId": "134085",
+  "away": "Les Ulis",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:14.022Z"
+  }
+ },
+ {
+  "id": "401932773",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134066",
+  "home": "ESAP Metz",
+  "homeLogo": "",
+  "awayId": "134129",
+  "away": "Reipertswiller",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:14.118Z"
+  }
+ },
+ {
+  "id": "401932755",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134102",
+  "home": "Massay",
+  "homeLogo": "",
+  "awayId": "134098",
+  "away": "Montlouis",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:14.338Z"
+  }
+ },
+ {
+  "id": "401932772",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134131",
+  "home": "Montigny-Les-Metz",
+  "homeLogo": "",
+  "awayId": "14439",
+  "away": "Pontarlier",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:14.501Z"
+  }
+ },
+ {
+  "id": "401932767",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "131576",
+  "home": "Montreuil FC",
+  "homeLogo": "",
+  "awayId": "20876",
+  "away": "Loon Plage FC",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:14.704Z"
+  }
+ },
+ {
+  "id": "401932770",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "16735",
+  "home": "Neslois",
+  "homeLogo": "",
+  "awayId": "134119",
+  "away": "Furiani-Agliani",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:14.859Z"
+  }
+ },
+ {
+  "id": "401932800",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134064",
+  "home": "Olympique Charleville Prix AM",
+  "homeLogo": "",
+  "awayId": "16913",
+  "away": "Olympique Marcquois",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:14.952Z"
+  }
+ },
+ {
+  "id": "401932797",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "132434",
+  "home": "Paris 13 Atletico",
+  "homeLogo": "",
+  "awayId": "11884",
+  "away": "Red Star FC 93",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11884.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1025,
+   "probs": {
+    "h": 0.4494,
+    "d": 0.2545,
+    "a": 0.2961
+   },
+   "lambdaH": 1.513,
+   "lambdaA": 1.179,
+   "madeAt": "2026-11-14T01:19:15.087Z"
+  }
+ },
+ {
+  "id": "401932759",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134078",
+  "home": "Racing Chambery",
+  "homeLogo": "",
+  "awayId": "3200",
+  "away": "Chamois Niortais FC",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:15.190Z"
+  }
+ },
+ {
+  "id": "401932741",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134133",
+  "home": "RIOM",
+  "homeLogo": "",
+  "awayId": "19388",
+  "away": "FC Limonest",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:15.348Z"
+  }
+ },
+ {
+  "id": "401932819",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134115",
+  "home": "Rives 82",
+  "homeLogo": "",
+  "awayId": "10685",
+  "away": "Trelissac FC",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:15.418Z"
+  }
+ },
+ {
+  "id": "401932805",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134070",
+  "home": "Rochefort FC",
+  "homeLogo": "",
+  "awayId": "134093",
+  "away": "Juventus Papus",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:15.491Z"
+  }
+ },
+ {
+  "id": "401932859",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134114",
+  "home": "Saint-Die Kellermann",
+  "homeLogo": "",
+  "awayId": "177",
+  "away": "Metz",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/177.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.09,
+   "probs": {
+    "h": 0.4288,
+    "d": 0.2444,
+    "a": 0.3268
+   },
+   "lambdaH": 1.581,
+   "lambdaA": 1.351,
+   "madeAt": "2026-11-14T01:19:15.556Z"
+  }
+ },
+ {
+  "id": "401932860",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134151",
+  "home": "Saint-Renan",
+  "homeLogo": "",
+  "awayId": "3266",
+  "away": "Stade Laval",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3266.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.096,
+   "probs": {
+    "h": 0.5002,
+    "d": 0.238,
+    "a": 0.2618
+   },
+   "lambdaH": 1.719,
+   "lambdaA": 1.179,
+   "madeAt": "2026-11-14T01:19:15.699Z"
+  }
+ },
+ {
+  "id": "401932798",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "168",
+  "home": "Sedan",
+  "homeLogo": "",
+  "awayId": "18085",
+  "away": "Bourges Foot",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:15.824Z"
+  }
+ },
+ {
+  "id": "401932807",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "18907",
+  "home": "Senlis",
+  "homeLogo": "",
+  "awayId": "19386",
+  "away": "Saint-Pryvé Saint Hilaire",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:15.973Z"
+  }
+ },
+ {
+  "id": "401932821",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134072",
+  "home": "Seyssinet",
+  "homeLogo": "",
+  "awayId": "7730",
+  "away": "Nimes",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7730.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:16.085Z"
+  }
+ },
+ {
+  "id": "401933040",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134124",
+  "home": "St Martin Tatinghem",
+  "homeLogo": "",
+  "awayId": "22139",
+  "away": "Racing Club de France",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:16.197Z"
+  }
+ },
+ {
+  "id": "401932855",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134111",
+  "home": "Stade Castelbourgeois",
+  "homeLogo": "",
+  "awayId": "165",
+  "away": "Nantes",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/165.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1013,
+   "probs": {
+    "h": 0.4581,
+    "d": 0.2518,
+    "a": 0.2901
+   },
+   "lambdaH": 1.547,
+   "lambdaA": 1.179,
+   "madeAt": "2026-11-14T01:19:16.287Z"
+  }
+ },
+ {
+  "id": "401932795",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "19390",
+  "home": "Stade Pontivy",
+  "homeLogo": "",
+  "awayId": "10693",
+  "away": "Plabennec",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:16.387Z"
+  }
+ },
+ {
+  "id": "401932775",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134116",
+  "home": "Talange",
+  "homeLogo": "",
+  "awayId": "134110",
+  "away": "Baume-Les-Dames",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:16.435Z"
+  }
+ },
+ {
+  "id": "401932796",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134086",
+  "home": "Tremblay",
+  "homeLogo": "",
+  "awayId": "134077",
+  "away": "Maisons-Alfort",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:16.553Z"
+  }
+ },
+ {
+  "id": "401932820",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "17623",
+  "home": "US Marseille Endoume",
+  "homeLogo": "",
+  "awayId": "132785",
+  "away": "SC Toulon",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:16.635Z"
+  }
+ },
+ {
+  "id": "401932766",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134094",
+  "home": "Val Yerres Crosne",
+  "homeLogo": "",
+  "awayId": "134092",
+  "away": "Union Cosnoise",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:16.735Z"
+  }
+ },
+ {
+  "id": "401932771",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134084",
+  "home": "Vandruvre",
+  "homeLogo": "",
+  "awayId": "9010",
+  "away": "Epinal",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:16.883Z"
+  }
+ },
+ {
+  "id": "401932739",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134081",
+  "home": "Veauche",
+  "homeLogo": "",
+  "awayId": "134089",
+  "away": "St Paul en Jarez",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:17.012Z"
+  }
+ },
+ {
+  "id": "401932769",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134075",
+  "home": "Verson",
+  "homeLogo": "",
+  "awayId": "4744",
+  "away": "Calais",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:17.109Z"
+  }
+ },
+ {
+  "id": "401932756",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-15T13:00Z",
+  "homeId": "134112",
+  "home": "Violaines",
+  "homeLogo": "",
+  "awayId": "134145",
+  "away": "Vermelles",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-14T01:19:17.169Z"
+  }
+ },
+ {
   "id": "401933039",
   "slug": "fra.coupe_de_france",
   "comp": "Coupe de France",
@@ -1822,6 +2847,11 @@
    "lambdaH": 1.362,
    "lambdaA": 1.091,
    "madeAt": "2026-11-12T01:28:49.371Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 5,
+   "at": "2026-11-14T01:19:12.304Z"
   }
  },
  {
@@ -1847,6 +2877,11 @@
    "lambdaH": 1.232,
    "lambdaA": 1.047,
    "madeAt": "2026-11-12T01:28:50.699Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 0,
+   "at": "2026-11-14T01:19:12.417Z"
   }
  },
  {
@@ -1872,6 +2907,11 @@
    "lambdaH": 1.205,
    "lambdaA": 1.889,
    "madeAt": "2026-11-12T01:28:50.776Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 5,
+   "at": "2026-11-14T01:19:12.489Z"
   }
  },
  {
@@ -1897,6 +2937,11 @@
    "lambdaH": 1.27,
    "lambdaA": 1.586,
    "madeAt": "2026-11-12T01:28:51.244Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 1,
+   "at": "2026-11-14T01:19:12.545Z"
   }
  },
  {
@@ -1922,6 +2967,11 @@
    "lambdaH": 1.258,
    "lambdaA": 1.179,
    "madeAt": "2026-11-12T01:28:51.340Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 1,
+   "at": "2026-11-14T01:19:12.675Z"
   }
  },
  {
@@ -1947,6 +2997,11 @@
    "lambdaH": 1.916,
    "lambdaA": 1.232,
    "madeAt": "2026-11-12T01:28:51.476Z"
+  },
+  "result": {
+   "h": 7,
+   "a": 0,
+   "at": "2026-11-14T01:19:12.809Z"
   }
  },
  {
@@ -1972,6 +3027,11 @@
    "lambdaH": 1.389,
    "lambdaA": 1.179,
    "madeAt": "2026-11-12T01:28:51.591Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 1,
+   "at": "2026-11-14T01:19:12.957Z"
   }
  },
  {
@@ -1997,6 +3057,11 @@
    "lambdaH": 0.995,
    "lambdaA": 1.574,
    "madeAt": "2026-11-12T01:28:51.685Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 3,
+   "at": "2026-11-14T01:19:13.015Z"
   }
  },
  {
@@ -2022,6 +3087,11 @@
    "lambdaH": 1.232,
    "lambdaA": 1.205,
    "madeAt": "2026-11-12T01:28:51.748Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 2,
+   "at": "2026-11-14T01:19:13.050Z"
   }
  },
  {
@@ -2047,6 +3117,11 @@
    "lambdaH": 0.837,
    "lambdaA": 1.521,
    "madeAt": "2026-11-12T01:28:51.901Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 0,
+   "at": "2026-11-14T01:19:13.099Z"
   }
  },
  {
@@ -2072,6 +3147,11 @@
    "lambdaH": 1.65,
    "lambdaA": 1.323,
    "madeAt": "2026-11-12T01:28:49.603Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 2,
+   "at": "2026-11-14T01:19:13.143Z"
   }
  },
  {
@@ -2097,6 +3177,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-12T01:28:49.692Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 2,
+   "at": "2026-11-14T01:19:13.201Z"
   }
  },
  {
@@ -2122,6 +3207,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-12T01:28:49.864Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 3,
+   "at": "2026-11-14T01:19:13.246Z"
   }
  },
  {
@@ -2147,6 +3237,11 @@
    "lambdaH": 1.311,
    "lambdaA": 1.732,
    "madeAt": "2026-11-12T01:28:50.551Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 1,
+   "at": "2026-11-14T01:19:13.295Z"
   }
  },
  {
