@@ -1,5 +1,280 @@
 [
  {
+  "id": "401861185",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-16T19:45Z",
+  "homeId": "481",
+  "home": "Germany",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+  "awayId": "449",
+  "away": "Netherlands",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0874,
+   "probs": {
+    "h": 0.3495,
+    "d": 0.2335,
+    "a": 0.4169
+   },
+   "lambdaH": 1.521,
+   "lambdaA": 1.679,
+   "madeAt": "2026-11-15T01:25:18.301Z"
+  }
+ },
+ {
+  "id": "401861179",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-16T19:45Z",
+  "homeId": "16721",
+  "home": "Gibraltar",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gib.png",
+  "awayId": "453",
+  "away": "Malta",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mlt.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1144,
+   "probs": {
+    "h": 0.2928,
+    "d": 0.265,
+    "a": 0.4422
+   },
+   "lambdaH": 1.1,
+   "lambdaA": 1.416,
+   "madeAt": "2026-11-15T01:25:18.512Z"
+  }
+ },
+ {
+  "id": "401861188",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-16T19:45Z",
+  "homeId": "455",
+  "home": "Greece",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
+  "awayId": "6757",
+  "away": "Serbia",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sba.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0863,
+   "probs": {
+    "h": 0.373,
+    "d": 0.2539,
+    "a": 0.373
+   },
+   "lambdaH": 1.389,
+   "lambdaA": 1.389,
+   "madeAt": "2026-11-15T01:25:18.898Z"
+  }
+ },
+ {
+  "id": "401861187",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-16T19:45Z",
+  "homeId": "463",
+  "home": "North Macedonia",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mkd.png",
+  "awayId": "472",
+  "away": "Slovenia",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/svn.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.119,
+   "probs": {
+    "h": 0.3222,
+    "d": 0.2784,
+    "a": 0.3993
+   },
+   "lambdaH": 1.1,
+   "lambdaA": 1.258,
+   "madeAt": "2026-11-15T01:25:19.181Z"
+  }
+ },
+ {
+  "id": "401861186",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-16T19:45Z",
+  "homeId": "475",
+  "home": "Switzerland",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+  "awayId": "580",
+  "away": "Scotland",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1186,
+   "probs": {
+    "h": 0.4951,
+    "d": 0.2549,
+    "a": 0.2501
+   },
+   "lambdaH": 1.547,
+   "lambdaA": 1.021,
+   "madeAt": "2026-11-15T01:25:19.350Z"
+  }
+ },
+ {
+  "id": "401914292",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-16T18:00Z",
+  "homeId": "587",
+  "home": "Andorra",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/and.png",
+  "awayId": "581",
+  "away": "Azerbaijan",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aze.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1222,
+   "probs": {
+    "h": 0.4052,
+    "d": 0.2799,
+    "a": 0.3149
+   },
+   "lambdaH": 1.258,
+   "lambdaA": 1.074,
+   "madeAt": "2026-11-15T01:25:19.632Z"
+  }
+ },
+ {
+  "id": "401861183",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-16T17:00Z",
+  "homeId": "444",
+  "home": "Estonia",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/est.png",
+  "awayId": "462",
+  "away": "Bulgaria",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bul.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1068,
+   "probs": {
+    "h": 0.444,
+    "d": 0.2588,
+    "a": 0.2972
+   },
+   "lambdaH": 1.468,
+   "lambdaA": 1.153,
+   "madeAt": "2026-11-15T01:25:17.733Z"
+  }
+ },
+ {
+  "id": "401861182",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-16T17:00Z",
+  "homeId": "470",
+  "home": "Iceland",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/isl.png",
+  "awayId": "582",
+  "away": "Luxembourg",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/lux.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1032,
+   "probs": {
+    "h": 0.5153,
+    "d": 0.2397,
+    "a": 0.245
+   },
+   "lambdaH": 1.705,
+   "lambdaA": 1.1,
+   "madeAt": "2026-11-15T01:25:17.913Z"
+  }
+ },
+ {
+  "id": "401861184",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-16T17:00Z",
+  "homeId": "460",
+  "home": "Lithuania",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ltu.png",
+  "awayId": "589",
+  "away": "Liechtenstein",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/lie.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1171,
+   "probs": {
+    "h": 0.5277,
+    "d": 0.2449,
+    "a": 0.2274
+   },
+   "lambdaH": 1.653,
+   "lambdaA": 0.995,
+   "madeAt": "2026-11-15T01:25:18.035Z"
+  }
+ },
+ {
+  "id": "401861180",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-16T15:00Z",
+  "homeId": "447",
+  "home": "Faroe Islands",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fro.png",
+  "awayId": "483",
+  "away": "Moldova",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mda.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1029,
+   "probs": {
+    "h": 0.5767,
+    "d": 0.2224,
+    "a": 0.2009
+   },
+   "lambdaH": 1.889,
+   "lambdaA": 1.021,
+   "madeAt": "2026-11-15T01:25:17.550Z"
+  }
+ },
+ {
+  "id": "401861181",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-16T15:00Z",
+  "homeId": "2619",
+  "home": "Kazakhstan",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kaz.png",
+  "awayId": "468",
+  "away": "Slovakia",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/svk.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1047,
+   "probs": {
+    "h": 0.2681,
+    "d": 0.2485,
+    "a": 0.4834
+   },
+   "lambdaH": 1.126,
+   "lambdaA": 1.6,
+   "madeAt": "2026-11-15T01:25:17.626Z"
+  }
+ },
+ {
   "id": "401861176",
   "slug": "uefa.nations",
   "comp": "Nations League",
@@ -1097,6 +1372,11 @@
    "lambdaH": 1.732,
    "lambdaA": 1.311,
    "madeAt": "2026-11-13T01:25:37.210Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 0,
+   "at": "2026-11-15T01:25:06.490Z"
   }
  },
  {
@@ -1122,6 +1402,11 @@
    "lambdaH": 1.468,
    "lambdaA": 1.047,
    "madeAt": "2026-11-13T01:25:37.380Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 0,
+   "at": "2026-11-15T01:25:06.576Z"
   }
  },
  {
@@ -1147,6 +1432,11 @@
    "lambdaH": 1.811,
    "lambdaA": 1.495,
    "madeAt": "2026-11-13T01:25:37.597Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 4,
+   "at": "2026-11-15T01:25:06.956Z"
   }
  },
  {
@@ -1172,6 +1462,11 @@
    "lambdaH": 1.495,
    "lambdaA": 1.626,
    "madeAt": "2026-11-13T01:25:37.726Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 1,
+   "at": "2026-11-15T01:25:07.773Z"
   }
  },
  {
@@ -1197,6 +1492,11 @@
    "lambdaH": 1.363,
    "lambdaA": 1.653,
    "madeAt": "2026-11-13T01:25:37.843Z"
+  },
+  "result": {
+   "h": 3,
+   "a": 2,
+   "at": "2026-11-15T01:25:07.921Z"
   }
  },
  {
@@ -1222,6 +1522,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:34.826Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 3,
+   "at": "2026-11-15T01:25:08.131Z"
   }
  },
  {
@@ -1247,6 +1552,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:31.241Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 0,
+   "at": "2026-11-15T01:25:08.236Z"
   }
  },
  {
@@ -1272,6 +1582,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:31.328Z"
+  },
+  "result": {
+   "h": 3,
+   "a": 3,
+   "at": "2026-11-15T01:25:08.388Z"
   }
  },
  {
@@ -1297,6 +1612,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:31.489Z"
+  },
+  "result": {
+   "h": 3,
+   "a": 1,
+   "at": "2026-11-15T01:25:08.487Z"
   }
  },
  {
@@ -1322,6 +1642,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:31.587Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 3,
+   "at": "2026-11-15T01:25:08.641Z"
   }
  },
  {
@@ -1347,6 +1672,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:31.716Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 1,
+   "at": "2026-11-15T01:25:09.299Z"
   }
  },
  {
@@ -1372,6 +1702,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:31.911Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 2,
+   "at": "2026-11-15T01:25:11.382Z"
   }
  },
  {
@@ -1397,6 +1732,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:32.196Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 2,
+   "at": "2026-11-15T01:25:11.617Z"
   }
  },
  {
@@ -1422,6 +1762,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:33.322Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 7,
+   "at": "2026-11-15T01:25:11.687Z"
   }
  },
  {
@@ -1447,6 +1792,11 @@
    "lambdaH": 1.375,
    "lambdaA": 1.236,
    "madeAt": "2026-11-13T01:25:33.654Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 4,
+   "at": "2026-11-15T01:25:11.750Z"
   }
  },
  {
@@ -1472,6 +1822,11 @@
    "lambdaH": 1.547,
    "lambdaA": 1.236,
    "madeAt": "2026-11-13T01:25:33.877Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 0,
+   "at": "2026-11-15T01:25:11.903Z"
   }
  },
  {
@@ -1497,6 +1852,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:34.098Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 2,
+   "at": "2026-11-15T01:25:12.054Z"
   }
  },
  {
@@ -1522,6 +1882,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:34.441Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 1,
+   "at": "2026-11-15T01:25:12.158Z"
   }
  },
  {
@@ -1547,6 +1912,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:31.019Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 1,
+   "at": "2026-11-15T01:25:12.323Z"
   }
  },
  {
@@ -1572,6 +1942,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:26.138Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 1,
+   "at": "2026-11-15T01:25:12.436Z"
   }
  },
  {
@@ -1597,6 +1972,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:27.061Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 2,
+   "at": "2026-11-15T01:25:12.517Z"
   }
  },
  {
@@ -1622,6 +2002,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:27.174Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 3,
+   "at": "2026-11-15T01:25:12.677Z"
   }
  },
  {
@@ -1647,6 +2032,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:27.373Z"
+  },
+  "result": {
+   "h": 5,
+   "a": 0,
+   "at": "2026-11-15T01:25:12.787Z"
   }
  },
  {
@@ -1672,6 +2062,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:27.511Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 4,
+   "at": "2026-11-15T01:25:12.934Z"
   }
  },
  {
@@ -1697,6 +2092,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:27.987Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 2,
+   "at": "2026-11-15T01:25:13.105Z"
   }
  },
  {
@@ -1722,6 +2122,11 @@
    "lambdaH": 1.513,
    "lambdaA": 1.265,
    "madeAt": "2026-11-13T01:25:28.115Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 3,
+   "at": "2026-11-15T01:25:13.169Z"
   }
  },
  {
@@ -1747,6 +2152,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:28.226Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 4,
+   "at": "2026-11-15T01:25:13.230Z"
   }
  },
  {
@@ -1772,6 +2182,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:28.371Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 2,
+   "at": "2026-11-15T01:25:13.309Z"
   }
  },
  {
@@ -1797,6 +2212,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:28.527Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 3,
+   "at": "2026-11-15T01:25:13.407Z"
   }
  },
  {
@@ -1822,6 +2242,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:28.687Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 4,
+   "at": "2026-11-15T01:25:13.554Z"
   }
  },
  {
@@ -1847,6 +2272,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:28.763Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 2,
+   "at": "2026-11-15T01:25:13.609Z"
   }
  },
  {
@@ -1872,6 +2302,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:28.816Z"
+  },
+  "result": {
+   "h": 4,
+   "a": 1,
+   "at": "2026-11-15T01:25:13.691Z"
   }
  },
  {
@@ -1897,6 +2332,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:29.174Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 1,
+   "at": "2026-11-15T01:25:13.802Z"
   }
  },
  {
@@ -1922,6 +2362,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:29.486Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 0,
+   "at": "2026-11-15T01:25:13.877Z"
   }
  },
  {
@@ -1947,6 +2392,11 @@
    "lambdaH": 1.203,
    "lambdaA": 1.064,
    "madeAt": "2026-11-13T01:25:29.710Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 0,
+   "at": "2026-11-15T01:25:14.068Z"
   }
  },
  {
@@ -1972,6 +2422,11 @@
    "lambdaH": 1.238,
    "lambdaA": 1.265,
    "madeAt": "2026-11-13T01:25:29.967Z"
+  },
+  "result": {
+   "h": 3,
+   "a": 3,
+   "at": "2026-11-15T01:25:14.280Z"
   }
  },
  {
@@ -1997,6 +2452,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:30.203Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 2,
+   "at": "2026-11-15T01:25:14.447Z"
   }
  },
  {
@@ -2022,6 +2482,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:30.456Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 3,
+   "at": "2026-11-15T01:25:14.588Z"
   }
  },
  {
@@ -2047,6 +2512,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:30.672Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 2,
+   "at": "2026-11-15T01:25:14.690Z"
   }
  },
  {
@@ -2072,6 +2542,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:30.871Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 2,
+   "at": "2026-11-15T01:25:14.735Z"
   }
  },
  {
@@ -2097,6 +2572,11 @@
    "lambdaH": 1.363,
    "lambdaA": 1.337,
    "madeAt": "2026-11-13T01:25:36.817Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 2,
+   "at": "2026-11-15T01:25:14.906Z"
   }
  },
  {
@@ -2122,6 +2602,11 @@
    "lambdaH": 1.916,
    "lambdaA": 1.6,
    "madeAt": "2026-11-13T01:25:37.041Z"
+  },
+  "result": {
+   "h": 3,
+   "a": 1,
+   "at": "2026-11-15T01:25:15.007Z"
   }
  },
  {
@@ -2147,6 +2632,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:26.019Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 3,
+   "at": "2026-11-15T01:25:15.054Z"
   }
  },
  {
@@ -2232,6 +2722,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:24.845Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 1,
+   "at": "2026-11-15T01:25:15.198Z"
   }
  },
  {
@@ -2257,6 +2752,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:25.189Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 5,
+   "at": "2026-11-15T01:25:15.277Z"
   }
  },
  {
@@ -2282,6 +2782,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-13T01:25:25.293Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 2,
+   "at": "2026-11-15T01:25:15.328Z"
   }
  },
  {
