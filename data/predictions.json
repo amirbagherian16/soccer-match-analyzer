@@ -1,5 +1,655 @@
 [
  {
+  "id": "401930899",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T23:30Z",
+  "homeId": "209",
+  "home": "Ecuador",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+  "awayId": "204",
+  "away": "Bolivia",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1658,
+   "probs": {
+    "h": 0.5005,
+    "d": 0.2857,
+    "a": 0.2138
+   },
+   "lambdaH": 1.319,
+   "lambdaA": 0.755,
+   "madeAt": "2026-11-16T01:39:57.142Z"
+  }
+ },
+ {
+  "id": "401932215",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T23:30Z",
+  "homeId": "212",
+  "home": "Uruguay",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+  "awayId": "2649",
+  "away": "Dominican Republic",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/dom.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.097,
+   "probs": {
+    "h": 0.2495,
+    "d": 0.235,
+    "a": 0.5155
+   },
+   "lambdaH": 1.153,
+   "lambdaA": 1.758,
+   "madeAt": "2026-11-16T01:39:57.239Z"
+  }
+ },
+ {
+  "id": "401930895",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T23:00Z",
+  "homeId": "202",
+  "home": "Argentina",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+  "awayId": "214",
+  "away": "Costa Rica",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/crc.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0919,
+   "probs": {
+    "h": 0.4478,
+    "d": 0.2453,
+    "a": 0.3069
+   },
+   "lambdaH": 1.598,
+   "lambdaA": 1.282,
+   "madeAt": "2026-11-16T01:39:56.876Z"
+  }
+ },
+ {
+  "id": "401921304",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T23:00Z",
+  "homeId": "207",
+  "home": "Chile",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
+  "awayId": "208",
+  "away": "Colombia",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1396,
+   "probs": {
+    "h": 0.2209,
+    "d": 0.2622,
+    "a": 0.517
+   },
+   "lambdaH": 0.876,
+   "lambdaA": 1.494,
+   "madeAt": "2026-11-16T01:39:57.027Z"
+  }
+ },
+ {
+  "id": "401861196",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-17T19:45Z",
+  "homeId": "452",
+  "home": "Bosnia-Herzegovina",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+  "awayId": "473",
+  "away": "Romania",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rom.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0851,
+   "probs": {
+    "h": 0.3705,
+    "d": 0.2364,
+    "a": 0.3931
+   },
+   "lambdaH": 1.547,
+   "lambdaA": 1.6,
+   "madeAt": "2026-11-16T01:39:54.049Z"
+  }
+ },
+ {
+  "id": "401861194",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-17T19:45Z",
+  "homeId": "479",
+  "home": "Denmark",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/den.png",
+  "awayId": "464",
+  "away": "Norway",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0791,
+   "probs": {
+    "h": 0.3498,
+    "d": 0.2083,
+    "a": 0.4419
+   },
+   "lambdaH": 1.837,
+   "lambdaA": 2.074,
+   "madeAt": "2026-11-16T01:39:54.345Z"
+  }
+ },
+ {
+  "id": "401861191",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-17T19:45Z",
+  "homeId": "480",
+  "home": "Hungary",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hun.png",
+  "awayId": "586",
+  "away": "Northern Ireland",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nir.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1228,
+   "probs": {
+    "h": 0.2673,
+    "d": 0.265,
+    "a": 0.4677
+   },
+   "lambdaH": 1.021,
+   "lambdaA": 1.442,
+   "madeAt": "2026-11-16T01:39:54.438Z"
+  }
+ },
+ {
+  "id": "401861193",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-17T19:45Z",
+  "homeId": "461",
+  "home": "Israel",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/isr.png",
+  "awayId": "474",
+  "away": "Austria",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.095,
+   "probs": {
+    "h": 0.2739,
+    "d": 0.228,
+    "a": 0.4981
+   },
+   "lambdaH": 1.311,
+   "lambdaA": 1.837,
+   "madeAt": "2026-11-16T01:39:54.543Z"
+  }
+ },
+ {
+  "id": "401861195",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-17T19:45Z",
+  "homeId": "471",
+  "home": "Poland",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pol.png",
+  "awayId": "466",
+  "away": "Sweden",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0906,
+   "probs": {
+    "h": 0.4379,
+    "d": 0.2389,
+    "a": 0.3232
+   },
+   "lambdaH": 1.653,
+   "lambdaA": 1.389,
+   "madeAt": "2026-11-16T01:39:54.663Z"
+  }
+ },
+ {
+  "id": "401861192",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-17T19:45Z",
+  "homeId": "476",
+  "home": "Republic of Ireland",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irl.png",
+  "awayId": "18272",
+  "away": "Kosovo",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kosovo.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1031,
+   "probs": {
+    "h": 0.3477,
+    "d": 0.2672,
+    "a": 0.3851
+   },
+   "lambdaH": 1.232,
+   "lambdaA": 1.311,
+   "madeAt": "2026-11-16T01:39:54.747Z"
+  }
+ },
+ {
+  "id": "401861190",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-17T19:45Z",
+  "homeId": "457",
+  "home": "Ukraine",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
+  "awayId": "584",
+  "away": "Georgia",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/geo.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.0879,
+   "probs": {
+    "h": 0.3611,
+    "d": 0.2538,
+    "a": 0.3851
+   },
+   "lambdaH": 1.363,
+   "lambdaA": 1.416,
+   "madeAt": "2026-11-16T01:39:54.821Z"
+  }
+ },
+ {
+  "id": "401861189",
+  "slug": "uefa.nations",
+  "comp": "Nations League",
+  "date": "2026-11-17T19:45Z",
+  "homeId": "578",
+  "home": "Wales",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/wal.png",
+  "awayId": "482",
+  "away": "Portugal",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0878,
+   "probs": {
+    "h": 0.3448,
+    "d": 0.2322,
+    "a": 0.4231
+   },
+   "lambdaH": 1.521,
+   "lambdaA": 1.705,
+   "madeAt": "2026-11-16T01:39:54.920Z"
+  }
+ },
+ {
+  "id": "401931956",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T16:30Z",
+  "homeId": "841",
+  "home": "Kuwait",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kuw.png",
+  "awayId": "215",
+  "away": "Honduras",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hon.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1156,
+   "probs": {
+    "h": 0.2767,
+    "d": 0.2612,
+    "a": 0.4622
+   },
+   "lambdaH": 1.074,
+   "lambdaA": 1.468,
+   "madeAt": "2026-11-16T01:39:56.751Z"
+  }
+ },
+ {
+  "id": "401933615",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T16:15Z",
+  "homeId": "4375",
+  "home": "Iraq",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+  "awayId": "469",
+  "away": "Iran",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1203,
+   "probs": {
+    "h": 0.2366,
+    "d": 0.2513,
+    "a": 0.5121
+   },
+   "lambdaH": 0.992,
+   "lambdaA": 1.587,
+   "madeAt": "2026-11-16T01:39:56.658Z"
+  }
+ },
+ {
+  "id": "401919974",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T16:00Z",
+  "homeId": "2917",
+  "home": "Jordan",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+  "awayId": "628",
+  "away": "Australia",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1112,
+   "probs": {
+    "h": 0.3019,
+    "d": 0.2644,
+    "a": 0.4336
+   },
+   "lambdaH": 1.13,
+   "lambdaA": 1.409,
+   "madeAt": "2026-11-16T01:39:56.470Z"
+  }
+ },
+ {
+  "id": "401930978",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T16:00Z",
+  "homeId": "454",
+  "home": "Russia",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
+  "awayId": "213",
+  "away": "Venezuela",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0996,
+   "probs": {
+    "h": 0.4635,
+    "d": 0.2494,
+    "a": 0.2871
+   },
+   "lambdaH": 1.575,
+   "lambdaA": 1.186,
+   "madeAt": "2026-11-16T01:39:56.565Z"
+  }
+ },
+ {
+  "id": "401931495",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T15:30Z",
+  "homeId": "655",
+  "home": "Saudi Arabia",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+  "awayId": "2570",
+  "away": "Uzbekistan",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1182,
+   "probs": {
+    "h": 0.3872,
+    "d": 0.2803,
+    "a": 0.3325
+   },
+   "lambdaH": 1.225,
+   "lambdaA": 1.114,
+   "madeAt": "2026-11-16T01:39:56.382Z"
+  }
+ },
+ {
+  "id": "401932718",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T14:10Z",
+  "homeId": "4397",
+  "home": "United Arab Emirates",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uae.png",
+  "awayId": "4380",
+  "away": "Syria",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/syr.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1082,
+   "probs": {
+    "h": 0.2467,
+    "d": 0.2445,
+    "a": 0.5088
+   },
+   "lambdaH": 1.074,
+   "lambdaA": 1.653,
+   "madeAt": "2026-11-16T01:39:56.302Z"
+  }
+ },
+ {
+  "id": "401931477",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T14:00Z",
+  "homeId": "4398",
+  "home": "Qatar",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+  "awayId": "451",
+  "away": "South Korea",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1102,
+   "probs": {
+    "h": 0.2755,
+    "d": 0.2557,
+    "a": 0.4688
+   },
+   "lambdaH": 1.104,
+   "lambdaA": 1.521,
+   "madeAt": "2026-11-16T01:39:56.192Z"
+  }
+ },
+ {
+  "id": "401916336",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T13:10Z",
+  "homeId": "627",
+  "home": "Japan",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+  "awayId": "210",
+  "away": "Paraguay",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1295,
+   "probs": {
+    "h": 0.519,
+    "d": 0.2551,
+    "a": 0.2259
+   },
+   "lambdaH": 1.555,
+   "lambdaA": 0.931,
+   "madeAt": "2026-11-16T01:39:56.111Z"
+  }
+ },
+ {
+  "id": "401933635",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T13:00Z",
+  "homeId": "4388",
+  "home": "Lebanon",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/lib.png",
+  "awayId": "6167",
+  "away": "Palestine",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pal.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1086,
+   "probs": {
+    "h": 0.4208,
+    "d": 0.2651,
+    "a": 0.3141
+   },
+   "lambdaH": 1.386,
+   "lambdaA": 1.16,
+   "madeAt": "2026-11-16T01:39:56.014Z"
+  }
+ },
+ {
+  "id": "401930880",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T12:00Z",
+  "homeId": "658",
+  "home": "China",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+  "awayId": "4381",
+  "away": "Bahrain",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bhr.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.0979,
+   "probs": {
+    "h": 0.3617,
+    "d": 0.2642,
+    "a": 0.3741
+   },
+   "lambdaH": 1.284,
+   "lambdaA": 1.311,
+   "madeAt": "2026-11-16T01:39:55.771Z"
+  }
+ },
+ {
+  "id": "401930242",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T12:00Z",
+  "homeId": "6724",
+  "home": "Kyrgyz Republic",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kgz.png",
+  "awayId": "7349",
+  "away": "Vietnam",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/vie.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.098,
+   "probs": {
+    "h": 0.234,
+    "d": 0.2262,
+    "a": 0.5398
+   },
+   "lambdaH": 1.153,
+   "lambdaA": 1.863,
+   "madeAt": "2026-11-16T01:39:55.905Z"
+  }
+ },
+ {
+  "id": "401916335",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T10:00Z",
+  "homeId": "4384",
+  "home": "Singapore",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sin.png",
+  "awayId": "205",
+  "away": "Brazil",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.119,
+   "probs": {
+    "h": 0.3232,
+    "d": 0.2786,
+    "a": 0.3981
+   },
+   "lambdaH": 1.101,
+   "lambdaA": 1.254,
+   "madeAt": "2026-11-16T01:39:55.666Z"
+  }
+ },
+ {
+  "id": "401930237",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T06:00Z",
+  "homeId": "2405",
+  "home": "Malaysia",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mas.png",
+  "awayId": "6014",
+  "away": "Yemen",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/yem.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0861,
+   "probs": {
+    "h": 0.3589,
+    "d": 0.247,
+    "a": 0.3941
+   },
+   "lambdaH": 1.416,
+   "lambdaA": 1.495,
+   "madeAt": "2026-11-16T01:39:55.436Z"
+  }
+ },
+ {
+  "id": "401933879",
+  "slug": "fifa.friendly",
+  "comp": "International Friendly",
+  "date": "2026-11-17T05:30Z",
+  "homeId": "4863",
+  "home": "Tahiti",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tah.png",
+  "awayId": "4884",
+  "away": "Cook Islands",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cok.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0907,
+   "probs": {
+    "h": 0.4354,
+    "d": 0.2464,
+    "a": 0.3182
+   },
+   "lambdaH": 1.571,
+   "lambdaA": 1.309,
+   "madeAt": "2026-11-16T01:39:55.285Z"
+  }
+ },
+ {
   "id": "401861185",
   "slug": "uefa.nations",
   "comp": "Nations League",
@@ -297,6 +947,11 @@
    "lambdaH": 1.679,
    "lambdaA": 1.626,
    "madeAt": "2026-11-14T01:19:20.057Z"
+  },
+  "result": {
+   "h": 4,
+   "a": 1,
+   "at": "2026-11-16T01:39:51.596Z"
   }
  },
  {
@@ -322,6 +977,11 @@
    "lambdaH": 1.705,
    "lambdaA": 1.442,
    "madeAt": "2026-11-14T01:19:20.185Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 1,
+   "at": "2026-11-16T01:39:51.715Z"
   }
  },
  {
@@ -347,6 +1007,11 @@
    "lambdaH": 1.942,
    "lambdaA": 1.284,
    "madeAt": "2026-11-14T01:19:20.294Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 1,
+   "at": "2026-11-16T01:39:51.836Z"
   }
  },
  {
@@ -372,6 +1037,11 @@
    "lambdaH": 1.6,
    "lambdaA": 1.547,
    "madeAt": "2026-11-14T01:19:20.371Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 3,
+   "at": "2026-11-16T01:39:51.942Z"
   }
  },
  {
@@ -397,6 +1067,11 @@
    "lambdaH": 0.942,
    "lambdaA": 1.389,
    "madeAt": "2026-11-14T01:19:19.564Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 2,
+   "at": "2026-11-16T01:39:52.053Z"
   }
  },
  {
@@ -422,6 +1097,11 @@
    "lambdaH": 2.284,
    "lambdaA": 1.021,
    "madeAt": "2026-11-14T01:19:19.777Z"
+  },
+  "result": {
+   "h": 7,
+   "a": 2,
+   "at": "2026-11-16T01:39:52.130Z"
   }
  },
  {
@@ -447,6 +1127,11 @@
    "lambdaH": 1.547,
    "lambdaA": 1.074,
    "madeAt": "2026-11-14T01:19:21.203Z"
+  },
+  "result": {
+   "h": 4,
+   "a": 0,
+   "at": "2026-11-16T01:39:52.220Z"
   }
  },
  {
