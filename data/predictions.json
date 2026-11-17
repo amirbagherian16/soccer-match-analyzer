@@ -1,5 +1,155 @@
 [
  {
+  "id": "401928524",
+  "slug": "esp.copa_del_rey",
+  "comp": "Copa del Rey",
+  "date": "2026-11-18T19:30Z",
+  "homeId": "22437",
+  "home": "CD Minera",
+  "homeLogo": "",
+  "awayId": "5419",
+  "away": "FC Cartagena",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/5419.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-17T01:28:44.136Z"
+  }
+ },
+ {
+  "id": "401928500",
+  "slug": "esp.copa_del_rey",
+  "comp": "Copa del Rey",
+  "date": "2026-11-18T19:30Z",
+  "homeId": "131470",
+  "home": "Reus FC Reddis",
+  "homeLogo": "",
+  "awayId": "5421",
+  "away": "Barakaldo",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-17T01:28:44.191Z"
+  }
+ },
+ {
+  "id": "401928505",
+  "slug": "esp.copa_del_rey",
+  "comp": "Copa del Rey",
+  "date": "2026-11-18T19:00Z",
+  "homeId": "6827",
+  "home": "Alcoyano",
+  "homeLogo": "",
+  "awayId": "84",
+  "away": "Mallorca",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/84.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.1035,
+   "probs": {
+    "h": 0.3616,
+    "d": 0.2704,
+    "a": 0.368
+   },
+   "lambdaH": 1.241,
+   "lambdaA": 1.254,
+   "madeAt": "2026-11-17T01:28:44.014Z"
+  }
+ },
+ {
+  "id": "401928532",
+  "slug": "esp.copa_del_rey",
+  "comp": "Copa del Rey",
+  "date": "2026-11-18T19:00Z",
+  "homeId": "5535",
+  "home": "Badajoz",
+  "homeLogo": "",
+  "awayId": "245",
+  "away": "Tenerife",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/245.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0992,
+   "probs": {
+    "h": 0.4271,
+    "d": 0.2563,
+    "a": 0.3166
+   },
+   "lambdaH": 1.467,
+   "lambdaA": 1.227,
+   "madeAt": "2026-11-17T01:28:44.079Z"
+  }
+ },
+ {
+  "id": "401928518",
+  "slug": "esp.copa_del_rey",
+  "comp": "Copa del Rey",
+  "date": "2026-11-18T18:00Z",
+  "homeId": "5464",
+  "home": "Portugalete",
+  "homeLogo": "",
+  "awayId": "8678",
+  "away": "Real Unión Irun",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0971,
+   "probs": {
+    "h": 0.4284,
+    "d": 0.2545,
+    "a": 0.3171
+   },
+   "lambdaH": 1.485,
+   "lambdaA": 1.242,
+   "madeAt": "2026-11-17T01:28:43.830Z"
+  }
+ },
+ {
+  "id": "401928497",
+  "slug": "esp.copa_del_rey",
+  "comp": "Copa del Rey",
+  "date": "2026-11-18T18:00Z",
+  "homeId": "21723",
+  "home": "Utebo",
+  "homeLogo": "",
+  "awayId": "11487",
+  "away": "CD Sabadell",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11487.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1219,
+   "probs": {
+    "h": 0.4201,
+    "d": 0.2761,
+    "a": 0.3038
+   },
+   "lambdaH": 1.305,
+   "lambdaA": 1.066,
+   "madeAt": "2026-11-17T01:28:43.921Z"
+  }
+ },
+ {
   "id": "401930899",
   "slug": "fifa.friendly",
   "comp": "International Friendly",
@@ -672,6 +822,11 @@
    "lambdaH": 1.521,
    "lambdaA": 1.679,
    "madeAt": "2026-11-15T01:25:18.301Z"
+  },
+  "result": {
+   "h": 5,
+   "a": 0,
+   "at": "2026-11-17T01:28:42.805Z"
   }
  },
  {
@@ -697,6 +852,11 @@
    "lambdaH": 1.1,
    "lambdaA": 1.416,
    "madeAt": "2026-11-15T01:25:18.512Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 1,
+   "at": "2026-11-17T01:28:42.876Z"
   }
  },
  {
@@ -722,6 +882,11 @@
    "lambdaH": 1.389,
    "lambdaA": 1.389,
    "madeAt": "2026-11-15T01:25:18.898Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 0,
+   "at": "2026-11-17T01:28:42.930Z"
   }
  },
  {
@@ -747,6 +912,11 @@
    "lambdaH": 1.1,
    "lambdaA": 1.258,
    "madeAt": "2026-11-15T01:25:19.181Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 3,
+   "at": "2026-11-17T01:28:42.967Z"
   }
  },
  {
@@ -772,6 +942,11 @@
    "lambdaH": 1.547,
    "lambdaA": 1.021,
    "madeAt": "2026-11-15T01:25:19.350Z"
+  },
+  "result": {
+   "h": 4,
+   "a": 0,
+   "at": "2026-11-17T01:28:43.013Z"
   }
  },
  {
@@ -797,6 +972,11 @@
    "lambdaH": 1.258,
    "lambdaA": 1.074,
    "madeAt": "2026-11-15T01:25:19.632Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 3,
+   "at": "2026-11-17T01:28:43.092Z"
   }
  },
  {
@@ -822,6 +1002,11 @@
    "lambdaH": 1.468,
    "lambdaA": 1.153,
    "madeAt": "2026-11-15T01:25:17.733Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 1,
+   "at": "2026-11-17T01:28:43.137Z"
   }
  },
  {
@@ -847,6 +1032,11 @@
    "lambdaH": 1.705,
    "lambdaA": 1.1,
    "madeAt": "2026-11-15T01:25:17.913Z"
+  },
+  "result": {
+   "h": 3,
+   "a": 0,
+   "at": "2026-11-17T01:28:43.177Z"
   }
  },
  {
@@ -872,6 +1062,11 @@
    "lambdaH": 1.653,
    "lambdaA": 0.995,
    "madeAt": "2026-11-15T01:25:18.035Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 1,
+   "at": "2026-11-17T01:28:43.227Z"
   }
  },
  {
