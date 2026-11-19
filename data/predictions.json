@@ -1,5 +1,80 @@
 [
  {
+  "id": "401882805",
+  "slug": "esp.1",
+  "comp": "La Liga",
+  "date": "2026-11-20T20:00Z",
+  "homeId": "93",
+  "home": "Athletic Club",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+  "awayId": "88",
+  "away": "Espanyol",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1071,
+   "probs": {
+    "h": 0.5252,
+    "d": 0.2337,
+    "a": 0.2411
+   },
+   "lambdaH": 1.665,
+   "lambdaA": 1.079,
+   "madeAt": "2026-11-19T01:29:44.307Z"
+  }
+ },
+ {
+  "id": "401876395",
+  "slug": "fra.1",
+  "comp": "Ligue 1",
+  "date": "2026-11-20T19:45Z",
+  "homeId": "170",
+  "home": "Troyes",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
+  "awayId": "3236",
+  "away": "Le Havre AC",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0977,
+   "probs": {
+    "h": 0.4966,
+    "d": 0.2373,
+    "a": 0.2661
+   },
+   "lambdaH": 1.564,
+   "lambdaA": 1.209,
+   "madeAt": "2026-11-19T01:29:45.236Z"
+  }
+ },
+ {
+  "id": "401884736",
+  "slug": "ger.1",
+  "comp": "Bundesliga",
+  "date": "2026-11-20T19:30Z",
+  "homeId": "132",
+  "home": "Bayern Munich",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+  "awayId": "122",
+  "away": "FC Cologne",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0908,
+   "probs": {
+    "h": 0.5447,
+    "d": 0.2111,
+    "a": 0.2442
+   },
+   "lambdaH": 1.491,
+   "lambdaA": 1.308,
+   "madeAt": "2026-11-19T01:29:44.867Z"
+  }
+ },
+ {
   "id": "401928524",
   "slug": "esp.copa_del_rey",
   "comp": "Copa del Rey",
@@ -22,6 +97,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-17T01:28:44.136Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 2,
+   "at": "2026-11-19T01:29:43.037Z"
   }
  },
  {
@@ -47,6 +127,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-17T01:28:44.191Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 1,
+   "at": "2026-11-19T01:29:43.144Z"
   }
  },
  {
@@ -72,6 +157,11 @@
    "lambdaH": 1.241,
    "lambdaA": 1.254,
    "madeAt": "2026-11-17T01:28:44.014Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 3,
+   "at": "2026-11-19T01:29:43.392Z"
   }
  },
  {
@@ -97,6 +187,11 @@
    "lambdaH": 1.467,
    "lambdaA": 1.227,
    "madeAt": "2026-11-17T01:28:44.079Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 5,
+   "at": "2026-11-19T01:29:43.471Z"
   }
  },
  {
@@ -122,6 +217,11 @@
    "lambdaH": 1.485,
    "lambdaA": 1.242,
    "madeAt": "2026-11-17T01:28:43.830Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 0,
+   "at": "2026-11-19T01:29:43.553Z"
   }
  },
  {
@@ -147,6 +247,11 @@
    "lambdaH": 1.305,
    "lambdaA": 1.066,
    "madeAt": "2026-11-17T01:28:43.921Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 3,
+   "at": "2026-11-19T01:29:43.626Z"
   }
  },
  {
