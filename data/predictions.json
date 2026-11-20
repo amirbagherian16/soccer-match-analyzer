@@ -1,5 +1,880 @@
 [
  {
+  "id": "401882798",
+  "slug": "esp.1",
+  "comp": "La Liga",
+  "date": "2026-11-21T20:00Z",
+  "homeId": "86",
+  "home": "Real Madrid",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+  "awayId": "85",
+  "away": "Celta Vigo",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0991,
+   "probs": {
+    "h": 0.6292,
+    "d": 0.1923,
+    "a": 0.1785
+   },
+   "lambdaH": 1.934,
+   "lambdaA": 1.085,
+   "madeAt": "2026-11-20T01:25:18.967Z"
+  }
+ },
+ {
+  "id": "401875546",
+  "slug": "ned.1",
+  "comp": "Eredivisie",
+  "date": "2026-11-21T20:00Z",
+  "homeId": "145",
+  "home": "FC Groningen",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/145.png",
+  "awayId": "146",
+  "away": "Heerenveen",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/146.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0795,
+   "probs": {
+    "h": 0.3784,
+    "d": 0.2561,
+    "a": 0.3655
+   },
+   "lambdaH": 1.805,
+   "lambdaA": 1.808,
+   "madeAt": "2026-11-20T01:25:20.049Z"
+  }
+ },
+ {
+  "id": "401875539",
+  "slug": "ned.1",
+  "comp": "Eredivisie",
+  "date": "2026-11-21T20:00Z",
+  "homeId": "3735",
+  "home": "Telstar",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3735.png",
+  "awayId": "2565",
+  "away": "PEC Zwolle",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2565.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0921,
+   "probs": {
+    "h": 0.4654,
+    "d": 0.2421,
+    "a": 0.2925
+   },
+   "lambdaH": 1.773,
+   "lambdaA": 1.402,
+   "madeAt": "2026-11-20T01:25:20.049Z"
+  }
+ },
+ {
+  "id": "401875067",
+  "slug": "ita.1",
+  "comp": "Serie A",
+  "date": "2026-11-21T19:45Z",
+  "homeId": "114",
+  "home": "Napoli",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+  "awayId": "239",
+  "away": "Torino",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0914,
+   "probs": {
+    "h": 0.4877,
+    "d": 0.2354,
+    "a": 0.2769
+   },
+   "lambdaH": 1.608,
+   "lambdaA": 1.315,
+   "madeAt": "2026-11-20T01:25:19.255Z"
+  }
+ },
+ {
+  "id": "401876399",
+  "slug": "fra.1",
+  "comp": "Ligue 1",
+  "date": "2026-11-21T19:45Z",
+  "homeId": "174",
+  "home": "AS Monaco",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
+  "awayId": "172",
+  "away": "AJ Auxerre",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0989,
+   "probs": {
+    "h": 0.5948,
+    "d": 0.2055,
+    "a": 0.1997
+   },
+   "lambdaH": 2.093,
+   "lambdaA": 1.098,
+   "madeAt": "2026-11-20T01:25:19.686Z"
+  }
+ },
+ {
+  "id": "401876403",
+  "slug": "fra.1",
+  "comp": "Ligue 1",
+  "date": "2026-11-21T19:45Z",
+  "homeId": "175",
+  "home": "Lens",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+  "awayId": "179",
+  "away": "Toulouse",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.084,
+   "probs": {
+    "h": 0.4209,
+    "d": 0.2471,
+    "a": 0.332
+   },
+   "lambdaH": 1.555,
+   "lambdaA": 1.552,
+   "madeAt": "2026-11-20T01:25:19.687Z"
+  }
+ },
+ {
+  "id": "401876402",
+  "slug": "fra.1",
+  "comp": "Ligue 1",
+  "date": "2026-11-21T19:45Z",
+  "homeId": "166",
+  "home": "Lille",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+  "awayId": "167",
+  "away": "Lyon",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1005,
+   "probs": {
+    "h": 0.4638,
+    "d": 0.2463,
+    "a": 0.2899
+   },
+   "lambdaH": 1.392,
+   "lambdaA": 1.236,
+   "madeAt": "2026-11-20T01:25:19.687Z"
+  }
+ },
+ {
+  "id": "401876396",
+  "slug": "fra.1",
+  "comp": "Ligue 1",
+  "date": "2026-11-21T19:45Z",
+  "homeId": "180",
+  "home": "Strasbourg",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
+  "awayId": "6997",
+  "away": "Brest",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0847,
+   "probs": {
+    "h": 0.3613,
+    "d": 0.2651,
+    "a": 0.3735
+   },
+   "lambdaH": 1.603,
+   "lambdaA": 1.669,
+   "madeAt": "2026-11-20T01:25:19.688Z"
+  }
+ },
+ {
+  "id": "401875544",
+  "slug": "ned.1",
+  "comp": "Eredivisie",
+  "date": "2026-11-21T17:45Z",
+  "homeId": "153",
+  "home": "FC Utrecht",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/153.png",
+  "awayId": "3736",
+  "away": "SC Cambuur",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3736.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0753,
+   "probs": {
+    "h": 0.3969,
+    "d": 0.2452,
+    "a": 0.358
+   },
+   "lambdaH": 1.935,
+   "lambdaA": 1.943,
+   "madeAt": "2026-11-20T01:25:20.048Z"
+  }
+ },
+ {
+  "id": "401875543",
+  "slug": "ned.1",
+  "comp": "Eredivisie",
+  "date": "2026-11-21T17:45Z",
+  "homeId": "142",
+  "home": "Feyenoord Rotterdam",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
+  "awayId": "2566",
+  "away": "Excelsior",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2566.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0884,
+   "probs": {
+    "h": 0.6419,
+    "d": 0.1752,
+    "a": 0.1829
+   },
+   "lambdaH": 2.398,
+   "lambdaA": 1.469,
+   "madeAt": "2026-11-20T01:25:20.049Z"
+  }
+ },
+ {
+  "id": "401879232",
+  "slug": "eng.1",
+  "comp": "Premier League",
+  "date": "2026-11-21T17:30Z",
+  "homeId": "361",
+  "home": "Newcastle United",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
+  "awayId": "359",
+  "away": "Arsenal",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.0992,
+   "probs": {
+    "h": 0.311,
+    "d": 0.2624,
+    "a": 0.4266
+   },
+   "lambdaH": 1.232,
+   "lambdaA": 1.45,
+   "madeAt": "2026-11-20T01:25:18.715Z"
+  }
+ },
+ {
+  "id": "401882797",
+  "slug": "esp.1",
+  "comp": "La Liga",
+  "date": "2026-11-21T17:30Z",
+  "homeId": "243",
+  "home": "Sevilla",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+  "awayId": "244",
+  "away": "Real Betis",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0876,
+   "probs": {
+    "h": 0.3833,
+    "d": 0.2677,
+    "a": 0.3491
+   },
+   "lambdaH": 1.644,
+   "lambdaA": 1.493,
+   "madeAt": "2026-11-20T01:25:18.964Z"
+  }
+ },
+ {
+  "id": "401884729",
+  "slug": "ger.1",
+  "comp": "Bundesliga",
+  "date": "2026-11-21T17:30Z",
+  "homeId": "133",
+  "home": "Schalke 04",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
+  "awayId": "134",
+  "away": "VfB Stuttgart",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.0966,
+   "probs": {
+    "h": 0.3535,
+    "d": 0.2756,
+    "a": 0.3709
+   },
+   "lambdaH": 1.271,
+   "lambdaA": 1.41,
+   "madeAt": "2026-11-20T01:25:19.455Z"
+  }
+ },
+ {
+  "id": "401874967",
+  "slug": "ita.1",
+  "comp": "Serie A",
+  "date": "2026-11-21T17:00Z",
+  "homeId": "115",
+  "home": "Parma",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
+  "awayId": "104",
+  "away": "AS Roma",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0965,
+   "probs": {
+    "h": 0.2496,
+    "d": 0.2299,
+    "a": 0.5205
+   },
+   "lambdaH": 1.208,
+   "lambdaA": 1.784,
+   "madeAt": "2026-11-20T01:25:19.255Z"
+  }
+ },
+ {
+  "id": "401876398",
+  "slug": "fra.1",
+  "comp": "Ligue 1",
+  "date": "2026-11-21T16:15Z",
+  "homeId": "2502",
+  "home": "Nice",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
+  "awayId": "160",
+  "away": "Paris Saint-Germain",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0909,
+   "probs": {
+    "h": 0.3428,
+    "d": 0.2637,
+    "a": 0.3935
+   },
+   "lambdaH": 1.421,
+   "lambdaA": 1.719,
+   "madeAt": "2026-11-20T01:25:19.685Z"
+  }
+ },
+ {
+  "id": "401888244",
+  "slug": "tur.1",
+  "comp": "Super Lig",
+  "date": "2026-11-21T16:00Z",
+  "homeId": "995",
+  "home": "Kocaelispor",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/995.png",
+  "awayId": "436",
+  "away": "Fenerbahce",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0827,
+   "probs": {
+    "h": 0.3771,
+    "d": 0.2676,
+    "a": 0.3552
+   },
+   "lambdaH": 1.41,
+   "lambdaA": 1.444,
+   "madeAt": "2026-11-20T01:25:20.436Z"
+  }
+ },
+ {
+  "id": "401875541",
+  "slug": "ned.1",
+  "comp": "Eredivisie",
+  "date": "2026-11-21T15:30Z",
+  "homeId": "147",
+  "home": "NEC Nijmegen",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/147.png",
+  "awayId": "148",
+  "away": "PSV Eindhoven",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0915,
+   "probs": {
+    "h": 0.2932,
+    "d": 0.242,
+    "a": 0.4648
+   },
+   "lambdaH": 1.471,
+   "lambdaA": 1.98,
+   "madeAt": "2026-11-20T01:25:20.048Z"
+  }
+ },
+ {
+  "id": "401882799",
+  "slug": "esp.1",
+  "comp": "La Liga",
+  "date": "2026-11-21T15:15Z",
+  "homeId": "101",
+  "home": "Rayo Vallecano",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+  "awayId": "94",
+  "away": "Valencia",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0912,
+   "probs": {
+    "h": 0.4851,
+    "d": 0.2352,
+    "a": 0.2797
+   },
+   "lambdaH": 1.626,
+   "lambdaA": 1.341,
+   "madeAt": "2026-11-20T01:25:18.964Z"
+  }
+ },
+ {
+  "id": "401879238",
+  "slug": "eng.1",
+  "comp": "Premier League",
+  "date": "2026-11-21T15:00Z",
+  "homeId": "349",
+  "home": "AFC Bournemouth",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+  "awayId": "393",
+  "away": "Nottingham Forest",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1164,
+   "probs": {
+    "h": 0.5817,
+    "d": 0.2182,
+    "a": 0.2001
+   },
+   "lambdaH": 1.86,
+   "lambdaA": 0.911,
+   "madeAt": "2026-11-20T01:25:18.710Z"
+  }
+ },
+ {
+  "id": "401878756",
+  "slug": "eng.1",
+  "comp": "Premier League",
+  "date": "2026-11-21T15:00Z",
+  "homeId": "362",
+  "home": "Aston Villa",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+  "awayId": "366",
+  "away": "Sunderland",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0966,
+   "probs": {
+    "h": 0.5376,
+    "d": 0.2242,
+    "a": 0.2383
+   },
+   "lambdaH": 1.76,
+   "lambdaA": 1.181,
+   "madeAt": "2026-11-20T01:25:18.713Z"
+  }
+ },
+ {
+  "id": "401879236",
+  "slug": "eng.1",
+  "comp": "Premier League",
+  "date": "2026-11-21T15:00Z",
+  "homeId": "363",
+  "home": "Chelsea",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+  "awayId": "357",
+  "away": "Leeds United",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0948,
+   "probs": {
+    "h": 0.4765,
+    "d": 0.2439,
+    "a": 0.2796
+   },
+   "lambdaH": 1.747,
+   "lambdaA": 1.274,
+   "madeAt": "2026-11-20T01:25:18.713Z"
+  }
+ },
+ {
+  "id": "401879235",
+  "slug": "eng.1",
+  "comp": "Premier League",
+  "date": "2026-11-21T15:00Z",
+  "homeId": "388",
+  "home": "Coventry City",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+  "awayId": "384",
+  "away": "Crystal Palace",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0868,
+   "probs": {
+    "h": 0.4627,
+    "d": 0.2342,
+    "a": 0.3031
+   },
+   "lambdaH": 1.668,
+   "lambdaA": 1.533,
+   "madeAt": "2026-11-20T01:25:18.714Z"
+  }
+ },
+ {
+  "id": "401878754",
+  "slug": "eng.1",
+  "comp": "Premier League",
+  "date": "2026-11-21T15:00Z",
+  "homeId": "367",
+  "home": "Tottenham Hotspur",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
+  "awayId": "373",
+  "away": "Ipswich Town",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0943,
+   "probs": {
+    "h": 0.5009,
+    "d": 0.2324,
+    "a": 0.2668
+   },
+   "lambdaH": 1.781,
+   "lambdaA": 1.317,
+   "madeAt": "2026-11-20T01:25:18.714Z"
+  }
+ },
+ {
+  "id": "401884732",
+  "slug": "ger.1",
+  "comp": "Bundesliga",
+  "date": "2026-11-21T14:30Z",
+  "homeId": "598",
+  "home": "1. FC Union Berlin",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
+  "awayId": "11420",
+  "away": "RB Leipzig",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0908,
+   "probs": {
+    "h": 0.2838,
+    "d": 0.2377,
+    "a": 0.4785
+   },
+   "lambdaH": 1.481,
+   "lambdaA": 2.123,
+   "madeAt": "2026-11-20T01:25:19.453Z"
+  }
+ },
+ {
+  "id": "401884735",
+  "slug": "ger.1",
+  "comp": "Bundesliga",
+  "date": "2026-11-21T14:30Z",
+  "homeId": "131",
+  "home": "Bayer Leverkusen",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+  "awayId": "3307",
+  "away": "SC Paderborn 07",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0985,
+   "probs": {
+    "h": 0.5443,
+    "d": 0.2237,
+    "a": 0.232
+   },
+   "lambdaH": 1.939,
+   "lambdaA": 1.149,
+   "madeAt": "2026-11-20T01:25:19.453Z"
+  }
+ },
+ {
+  "id": "401884731",
+  "slug": "ger.1",
+  "comp": "Bundesliga",
+  "date": "2026-11-21T14:30Z",
+  "homeId": "268",
+  "home": "Borussia Mönchengladbach",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+  "awayId": "124",
+  "away": "Borussia Dortmund",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.091,
+   "probs": {
+    "h": 0.2863,
+    "d": 0.2344,
+    "a": 0.4793
+   },
+   "lambdaH": 1.456,
+   "lambdaA": 1.814,
+   "madeAt": "2026-11-20T01:25:19.454Z"
+  }
+ },
+ {
+  "id": "401884734",
+  "slug": "ger.1",
+  "comp": "Bundesliga",
+  "date": "2026-11-21T14:30Z",
+  "homeId": "125",
+  "home": "Eintracht Frankfurt",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
+  "awayId": "7911",
+  "away": "TSG Hoffenheim",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0874,
+   "probs": {
+    "h": 0.49,
+    "d": 0.2282,
+    "a": 0.2818
+   },
+   "lambdaH": 2.112,
+   "lambdaA": 1.594,
+   "madeAt": "2026-11-20T01:25:19.454Z"
+  }
+ },
+ {
+  "id": "401884728",
+  "slug": "ger.1",
+  "comp": "Bundesliga",
+  "date": "2026-11-21T14:30Z",
+  "homeId": "10388",
+  "home": "SV Elversberg",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+  "awayId": "126",
+  "away": "SC Freiburg",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0854,
+   "probs": {
+    "h": 0.3652,
+    "d": 0.2562,
+    "a": 0.3786
+   },
+   "lambdaH": 1.638,
+   "lambdaA": 1.812,
+   "madeAt": "2026-11-20T01:25:19.454Z"
+  }
+ },
+ {
+  "id": "401875056",
+  "slug": "ita.1",
+  "comp": "Serie A",
+  "date": "2026-11-21T14:00Z",
+  "homeId": "2572",
+  "home": "Como",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+  "awayId": "2925",
+  "away": "Cagliari",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1031,
+   "probs": {
+    "h": 0.6005,
+    "d": 0.2074,
+    "a": 0.1921
+   },
+   "lambdaH": 1.952,
+   "lambdaA": 0.989,
+   "madeAt": "2026-11-20T01:25:19.254Z"
+  }
+ },
+ {
+  "id": "401874981",
+  "slug": "ita.1",
+  "comp": "Serie A",
+  "date": "2026-11-21T14:00Z",
+  "homeId": "112",
+  "home": "Lazio",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
+  "awayId": "113",
+  "away": "Lecce",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
+  "ai": {
+   "h": 2,
+   "a": 0,
+   "p": 0.1023,
+   "probs": {
+    "h": 0.6711,
+    "d": 0.1792,
+    "a": 0.1497
+   },
+   "lambdaH": 2.056,
+   "lambdaA": 0.972,
+   "madeAt": "2026-11-20T01:25:19.254Z"
+  }
+ },
+ {
+  "id": "401882806",
+  "slug": "esp.1",
+  "comp": "La Liga",
+  "date": "2026-11-21T13:00Z",
+  "homeId": "96",
+  "home": "Alavés",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+  "awayId": "90",
+  "away": "Deportivo",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0949,
+   "probs": {
+    "h": 0.4272,
+    "d": 0.2605,
+    "a": 0.3123
+   },
+   "lambdaH": 1.482,
+   "lambdaA": 1.266,
+   "madeAt": "2026-11-20T01:25:18.962Z"
+  }
+ },
+ {
+  "id": "401888369",
+  "slug": "tur.1",
+  "comp": "Super Lig",
+  "date": "2026-11-21T13:00Z",
+  "homeId": "132335",
+  "home": "Amed SFK",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132335.png",
+  "awayId": "7656",
+  "away": "Caykur Rizespor",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7656.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.098,
+   "probs": {
+    "h": 0.5761,
+    "d": 0.2096,
+    "a": 0.2143
+   },
+   "lambdaH": 2.009,
+   "lambdaA": 1.19,
+   "madeAt": "2026-11-20T01:25:20.435Z"
+  }
+ },
+ {
+  "id": "401888245",
+  "slug": "tur.1",
+  "comp": "Super Lig",
+  "date": "2026-11-21T13:00Z",
+  "homeId": "432",
+  "home": "Galatasaray",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+  "awayId": "11429",
+  "away": "Samsunspor",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11429.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0953,
+   "probs": {
+    "h": 0.6812,
+    "d": 0.1672,
+    "a": 0.1516
+   },
+   "lambdaH": 2.321,
+   "lambdaA": 1.215,
+   "madeAt": "2026-11-20T01:25:20.436Z"
+  }
+ },
+ {
+  "id": "401879233",
+  "slug": "eng.1",
+  "comp": "Premier League",
+  "date": "2026-11-21T12:30Z",
+  "homeId": "382",
+  "home": "Manchester City",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+  "awayId": "370",
+  "away": "Fulham",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0973,
+   "probs": {
+    "h": 0.5547,
+    "d": 0.2166,
+    "a": 0.2287
+   },
+   "lambdaH": 1.916,
+   "lambdaA": 1.218,
+   "madeAt": "2026-11-20T01:25:18.709Z"
+  }
+ },
+ {
+  "id": "401888247",
+  "slug": "tur.1",
+  "comp": "Super Lig",
+  "date": "2026-11-21T10:30Z",
+  "homeId": "996",
+  "home": "Genclerbirligi",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/996.png",
+  "awayId": "20070",
+  "away": "Gaziantep FK",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20070.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0947,
+   "probs": {
+    "h": 0.4778,
+    "d": 0.2419,
+    "a": 0.2802
+   },
+   "lambdaH": 1.533,
+   "lambdaA": 1.251,
+   "madeAt": "2026-11-20T01:25:20.434Z"
+  }
+ },
+ {
   "id": "401882805",
   "slug": "esp.1",
   "comp": "La Liga",
