@@ -1,5 +1,230 @@
 [
  {
+  "id": "401915295",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-24T20:00Z",
+  "homeId": "359",
+  "home": "Arsenal",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+  "awayId": "124",
+  "away": "Borussia Dortmund",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0919,
+   "probs": {
+    "h": 0.4116,
+    "d": 0.2532,
+    "a": 0.3352
+   },
+   "lambdaH": 1.471,
+   "lambdaA": 1.303,
+   "madeAt": "2026-11-23T01:30:47.297Z"
+  }
+ },
+ {
+  "id": "401915296",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-24T20:00Z",
+  "homeId": "2572",
+  "home": "Como",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+  "awayId": "887",
+  "away": "AEK Athens",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0926,
+   "probs": {
+    "h": 0.4888,
+    "d": 0.2226,
+    "a": 0.2886
+   },
+   "lambdaH": 1.905,
+   "lambdaA": 1.424,
+   "madeAt": "2026-11-23T01:30:47.376Z"
+  }
+ },
+ {
+  "id": "401915294",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-24T20:00Z",
+  "homeId": "142",
+  "home": "Feyenoord Rotterdam",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
+  "awayId": "437",
+  "away": "FC Porto",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.082,
+   "probs": {
+    "h": 0.4059,
+    "d": 0.2207,
+    "a": 0.3735
+   },
+   "lambdaH": 1.818,
+   "lambdaA": 1.738,
+   "madeAt": "2026-11-23T01:30:47.483Z"
+  }
+ },
+ {
+  "id": "401915379",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-24T20:00Z",
+  "homeId": "382",
+  "home": "Manchester City",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+  "awayId": "114",
+  "away": "Napoli",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0952,
+   "probs": {
+    "h": 0.5414,
+    "d": 0.213,
+    "a": 0.2456
+   },
+   "lambdaH": 2.049,
+   "lambdaA": 1.327,
+   "madeAt": "2026-11-23T01:30:47.573Z"
+  }
+ },
+ {
+  "id": "401915299",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-24T20:00Z",
+  "homeId": "11420",
+  "home": "RB Leipzig",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+  "awayId": "175",
+  "away": "Lens",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.09,
+   "probs": {
+    "h": 0.585,
+    "d": 0.1925,
+    "a": 0.2225
+   },
+   "lambdaH": 2.368,
+   "lambdaA": 1.424,
+   "madeAt": "2026-11-23T01:30:47.670Z"
+  }
+ },
+ {
+  "id": "401915298",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-24T20:00Z",
+  "homeId": "86",
+  "home": "Real Madrid",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+  "awayId": "148",
+  "away": "PSV Eindhoven",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0844,
+   "probs": {
+    "h": 0.4469,
+    "d": 0.2157,
+    "a": 0.3374
+   },
+   "lambdaH": 1.963,
+   "lambdaA": 1.69,
+   "madeAt": "2026-11-23T01:30:47.733Z"
+  }
+ },
+ {
+  "id": "401915297",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-24T20:00Z",
+  "homeId": "521",
+  "home": "Slovan Bratislava",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png",
+  "awayId": "244",
+  "away": "Real Betis",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.092,
+   "probs": {
+    "h": 0.3098,
+    "d": 0.2384,
+    "a": 0.4518
+   },
+   "lambdaH": 1.351,
+   "lambdaA": 1.676,
+   "madeAt": "2026-11-23T01:30:47.845Z"
+  }
+ },
+ {
+  "id": "401915380",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-24T17:45Z",
+  "homeId": "2980",
+  "home": "Bodo/Glimt",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png",
+  "awayId": "4411",
+  "away": "LASK Linz",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0835,
+   "probs": {
+    "h": 0.4358,
+    "d": 0.2165,
+    "a": 0.3476
+   },
+   "lambdaH": 1.934,
+   "lambdaA": 1.714,
+   "madeAt": "2026-11-23T01:30:46.971Z"
+  }
+ },
+ {
+  "id": "401915300",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-24T17:45Z",
+  "homeId": "432",
+  "home": "Galatasaray",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+  "awayId": "362",
+  "away": "Aston Villa",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0899,
+   "probs": {
+    "h": 0.4812,
+    "d": 0.2182,
+    "a": 0.3006
+   },
+   "lambdaH": 1.963,
+   "lambdaA": 1.52,
+   "madeAt": "2026-11-23T01:30:47.044Z"
+  }
+ },
+ {
   "id": "401879237",
   "slug": "eng.1",
   "comp": "Premier League",
@@ -122,6 +347,11 @@
    "lambdaH": 1.152,
    "lambdaA": 1.496,
    "madeAt": "2026-11-21T01:29:27.968Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 3,
+   "at": "2026-11-23T01:30:46.444Z"
   }
  },
  {
@@ -147,6 +377,11 @@
    "lambdaH": 1.499,
    "lambdaA": 1.714,
    "madeAt": "2026-11-21T01:29:28.481Z"
+  },
+  "result": {
+   "h": 4,
+   "a": 4,
+   "at": "2026-11-23T01:30:46.520Z"
   }
  },
  {
@@ -172,6 +407,11 @@
    "lambdaH": 1.857,
    "lambdaA": 1.221,
    "madeAt": "2026-11-21T01:29:30.256Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 3,
+   "at": "2026-11-23T01:30:46.607Z"
   }
  },
  {
@@ -197,6 +437,11 @@
    "lambdaH": 1.676,
    "lambdaA": 1.239,
    "madeAt": "2026-11-21T01:29:27.968Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 0,
+   "at": "2026-11-23T01:30:46.676Z"
   }
  },
  {
@@ -222,6 +467,11 @@
    "lambdaH": 1.663,
    "lambdaA": 1.546,
    "madeAt": "2026-11-21T01:29:28.480Z"
+  },
+  "result": {
+   "h": 5,
+   "a": 1,
+   "at": "2026-11-23T01:30:46.696Z"
   }
  },
  {
