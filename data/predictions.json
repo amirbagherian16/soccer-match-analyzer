@@ -1,5 +1,230 @@
 [
  {
+  "id": "401915291",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-25T20:00Z",
+  "homeId": "1068",
+  "home": "Atlético Madrid",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+  "awayId": "510",
+  "away": "Viking FK",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/510.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.109,
+   "probs": {
+    "h": 0.5102,
+    "d": 0.2447,
+    "a": 0.2451
+   },
+   "lambdaH": 1.651,
+   "lambdaA": 1.066,
+   "madeAt": "2026-11-24T01:30:07.603Z"
+  }
+ },
+ {
+  "id": "401915292",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-25T20:00Z",
+  "homeId": "570",
+  "home": "Club Brugge",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
+  "awayId": "364",
+  "away": "Liverpool",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0921,
+   "probs": {
+    "h": 0.5028,
+    "d": 0.217,
+    "a": 0.2803
+   },
+   "lambdaH": 1.992,
+   "lambdaA": 1.448,
+   "madeAt": "2026-11-24T01:30:07.716Z"
+  }
+ },
+ {
+  "id": "401915376",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-25T20:00Z",
+  "homeId": "110",
+  "home": "Internazionale",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+  "awayId": "134",
+  "away": "VfB Stuttgart",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0945,
+   "probs": {
+    "h": 0.5045,
+    "d": 0.2231,
+    "a": 0.2724
+   },
+   "lambdaH": 1.905,
+   "lambdaA": 1.351,
+   "madeAt": "2026-11-24T01:30:07.881Z"
+  }
+ },
+ {
+  "id": "401915377",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-25T20:00Z",
+  "homeId": "166",
+  "home": "Lille",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+  "awayId": "132",
+  "away": "Bayern Munich",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1047,
+   "probs": {
+    "h": 0.4236,
+    "d": 0.2614,
+    "a": 0.3151
+   },
+   "lambdaH": 1.42,
+   "lambdaA": 1.188,
+   "madeAt": "2026-11-24T01:30:08.003Z"
+  }
+ },
+ {
+  "id": "401915374",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-25T20:00Z",
+  "homeId": "160",
+  "home": "Paris Saint-Germain",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+  "awayId": "104",
+  "away": "AS Roma",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0839,
+   "probs": {
+    "h": 0.4896,
+    "d": 0.206,
+    "a": 0.3044
+   },
+   "lambdaH": 2.165,
+   "lambdaA": 1.69,
+   "madeAt": "2026-11-24T01:30:08.090Z"
+  }
+ },
+ {
+  "id": "401915375",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-25T20:00Z",
+  "homeId": "493",
+  "home": "Shakhtar Donetsk",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
+  "awayId": "436",
+  "away": "Fenerbahce",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0869,
+   "probs": {
+    "h": 0.3505,
+    "d": 0.2485,
+    "a": 0.401
+   },
+   "lambdaH": 1.382,
+   "lambdaA": 1.494,
+   "madeAt": "2026-11-24T01:30:08.206Z"
+  }
+ },
+ {
+  "id": "401915373",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-25T20:00Z",
+  "homeId": "2250",
+  "home": "Sporting CP",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
+  "awayId": "360",
+  "away": "Manchester United",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0973,
+   "probs": {
+    "h": 0.6148,
+    "d": 0.1969,
+    "a": 0.1883
+   },
+   "lambdaH": 2.223,
+   "lambdaA": 1.157,
+   "madeAt": "2026-11-24T01:30:08.297Z"
+  }
+ },
+ {
+  "id": "401915378",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-25T17:45Z",
+  "homeId": "21922",
+  "home": "Sabah FK",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21922.png",
+  "awayId": "83",
+  "away": "Barcelona",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+  "ai": {
+   "h": 1,
+   "a": 2,
+   "p": 0.0832,
+   "probs": {
+    "h": 0.3056,
+    "d": 0.2052,
+    "a": 0.4892
+   },
+   "lambdaH": 1.706,
+   "lambdaA": 2.179,
+   "madeAt": "2026-11-24T01:30:07.345Z"
+  }
+ },
+ {
+  "id": "401915293",
+  "slug": "uefa.champions",
+  "comp": "Champions League",
+  "date": "2026-11-25T17:45Z",
+  "homeId": "494",
+  "home": "Slavia Prague",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/494.png",
+  "awayId": "102",
+  "away": "Villarreal",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0833,
+   "probs": {
+    "h": 0.3881,
+    "d": 0.2307,
+    "a": 0.3812
+   },
+   "lambdaH": 1.653,
+   "lambdaA": 1.637,
+   "madeAt": "2026-11-24T01:30:07.494Z"
+  }
+ },
+ {
   "id": "401915295",
   "slug": "uefa.champions",
   "comp": "Champions League",
@@ -247,6 +472,11 @@
    "lambdaH": 1.546,
    "lambdaA": 1.266,
    "madeAt": "2026-11-22T01:26:35.611Z"
+  },
+  "result": {
+   "h": 4,
+   "a": 0,
+   "at": "2026-11-24T01:30:06.436Z"
   }
  },
  {
@@ -272,6 +502,11 @@
    "lambdaH": 1.611,
    "lambdaA": 1.348,
    "madeAt": "2026-11-22T01:26:36.001Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 1,
+   "at": "2026-11-24T01:30:06.510Z"
   }
  },
  {
@@ -297,6 +532,11 @@
    "lambdaH": 1.87,
    "lambdaA": 1.618,
    "madeAt": "2026-11-22T01:26:36.296Z"
+  },
+  "result": {
+   "h": 3,
+   "a": 0,
+   "at": "2026-11-24T01:30:06.571Z"
   }
  },
  {
@@ -322,6 +562,11 @@
    "lambdaH": 1.79,
    "lambdaA": 1.497,
    "madeAt": "2026-11-22T01:26:37.032Z"
+  },
+  "result": {
+   "h": 4,
+   "a": 2,
+   "at": "2026-11-24T01:30:06.680Z"
   }
  },
  {
