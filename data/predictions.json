@@ -1,5 +1,305 @@
 [
  {
+  "id": "401885389",
+  "slug": "por.1",
+  "comp": "Primeira Liga",
+  "date": "2026-11-27T20:15Z",
+  "homeId": "552",
+  "home": "Maritimo",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/552.png",
+  "awayId": "3472",
+  "away": "C.D. Nacional",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3472.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0969,
+   "probs": {
+    "h": 0.4271,
+    "d": 0.2602,
+    "a": 0.3127
+   },
+   "lambdaH": 1.437,
+   "lambdaA": 1.259,
+   "madeAt": "2026-11-26T01:35:57.559Z"
+  }
+ },
+ {
+  "id": "401879225",
+  "slug": "eng.1",
+  "comp": "Premier League",
+  "date": "2026-11-27T20:00Z",
+  "homeId": "393",
+  "home": "Nottingham Forest",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+  "awayId": "363",
+  "away": "Chelsea",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.08,
+   "probs": {
+    "h": 0.3816,
+    "d": 0.2602,
+    "a": 0.3583
+   },
+   "lambdaH": 1.393,
+   "lambdaA": 1.523,
+   "madeAt": "2026-11-26T01:35:55.128Z"
+  }
+ },
+ {
+  "id": "401882791",
+  "slug": "esp.1",
+  "comp": "La Liga",
+  "date": "2026-11-27T20:00Z",
+  "homeId": "1538",
+  "home": "Levante",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+  "awayId": "87",
+  "away": "Racing Santander",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0924,
+   "probs": {
+    "h": 0.4774,
+    "d": 0.2378,
+    "a": 0.2849
+   },
+   "lambdaH": 1.888,
+   "lambdaA": 1.426,
+   "madeAt": "2026-11-26T01:35:55.392Z"
+  }
+ },
+ {
+  "id": "401875004",
+  "slug": "ita.1",
+  "comp": "Serie A",
+  "date": "2026-11-27T19:45Z",
+  "homeId": "17530",
+  "home": "Venezia",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
+  "awayId": "107",
+  "away": "Bologna",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
+  "ai": {
+   "h": 0,
+   "a": 1,
+   "p": 0.0968,
+   "probs": {
+    "h": 0.2936,
+    "d": 0.2525,
+    "a": 0.4539
+   },
+   "lambdaH": 1.233,
+   "lambdaA": 1.523,
+   "madeAt": "2026-11-26T01:35:55.687Z"
+  }
+ },
+ {
+  "id": "401876392",
+  "slug": "fra.1",
+  "comp": "Ligue 1",
+  "date": "2026-11-27T19:45Z",
+  "homeId": "6997",
+  "home": "Brest",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+  "awayId": "6851",
+  "away": "Paris FC",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0885,
+   "probs": {
+    "h": 0.4152,
+    "d": 0.2601,
+    "a": 0.3248
+   },
+   "lambdaH": 1.459,
+   "lambdaA": 1.343,
+   "madeAt": "2026-11-26T01:35:56.631Z"
+  }
+ },
+ {
+  "id": "401884720",
+  "slug": "ger.1",
+  "comp": "Bundesliga",
+  "date": "2026-11-27T19:30Z",
+  "homeId": "137",
+  "home": "Werder Bremen",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+  "awayId": "268",
+  "away": "Borussia Mönchengladbach",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0936,
+   "probs": {
+    "h": 0.6114,
+    "d": 0.1891,
+    "a": 0.1994
+   },
+   "lambdaH": 2.159,
+   "lambdaA": 1.374,
+   "madeAt": "2026-11-26T01:35:56.180Z"
+  }
+ },
+ {
+  "id": "401875536",
+  "slug": "ned.1",
+  "comp": "Eredivisie",
+  "date": "2026-11-27T19:00Z",
+  "homeId": "145",
+  "home": "FC Groningen",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/145.png",
+  "awayId": "156",
+  "away": "Willem II",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/156.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0828,
+   "probs": {
+    "h": 0.6291,
+    "d": 0.1798,
+    "a": 0.1911
+   },
+   "lambdaH": 2.622,
+   "lambdaA": 1.528,
+   "madeAt": "2026-11-26T01:35:57.072Z"
+  }
+ },
+ {
+  "id": "401934500",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-27T19:00Z",
+  "homeId": "134113",
+  "home": "Le Pays Du Valois",
+  "homeLogo": "",
+  "awayId": "6732",
+  "away": "Valenciennes",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6732.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0984,
+   "probs": {
+    "h": 0.4785,
+    "d": 0.2453,
+    "a": 0.2761
+   },
+   "lambdaH": 1.628,
+   "lambdaA": 1.178,
+   "madeAt": "2026-11-26T01:35:58.353Z"
+  }
+ },
+ {
+  "id": "401934495",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-27T19:00Z",
+  "homeId": "134101",
+  "home": "Pays de Saint-Omer",
+  "homeLogo": "",
+  "awayId": "2927",
+  "away": "Caen",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2927.png",
+  "ai": {
+   "h": 2,
+   "a": 1,
+   "p": 0.0888,
+   "probs": {
+    "h": 0.4189,
+    "d": 0.2426,
+    "a": 0.3385
+   },
+   "lambdaH": 1.584,
+   "lambdaA": 1.401,
+   "madeAt": "2026-11-26T01:35:58.445Z"
+  }
+ },
+ {
+  "id": "401934489",
+  "slug": "fra.coupe_de_france",
+  "comp": "Coupe de France",
+  "date": "2026-11-27T18:00Z",
+  "homeId": "21306",
+  "home": "AS Cannes",
+  "homeLogo": "",
+  "awayId": "18906",
+  "away": "Le Puy",
+  "awayLogo": "",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.0883,
+   "probs": {
+    "h": 0.3834,
+    "d": 0.2543,
+    "a": 0.3623
+   },
+   "lambdaH": 1.408,
+   "lambdaA": 1.362,
+   "madeAt": "2026-11-26T01:35:58.277Z"
+  }
+ },
+ {
+  "id": "401888241",
+  "slug": "tur.1",
+  "comp": "Super Lig",
+  "date": "2026-11-27T17:00Z",
+  "homeId": "9078",
+  "home": "Alanyaspor",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9078.png",
+  "awayId": "7648",
+  "away": "Konyaspor",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7648.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.1152,
+   "probs": {
+    "h": 0.4611,
+    "d": 0.2546,
+    "a": 0.2843
+   },
+   "lambdaH": 1.334,
+   "lambdaA": 1.115,
+   "madeAt": "2026-11-26T01:35:57.830Z"
+  }
+ },
+ {
+  "id": "401888240",
+  "slug": "tur.1",
+  "comp": "Super Lig",
+  "date": "2026-11-27T17:00Z",
+  "homeId": "7656",
+  "home": "Caykur Rizespor",
+  "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7656.png",
+  "awayId": "6870",
+  "away": "Kasimpasa",
+  "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
+  "ai": {
+   "h": 1,
+   "a": 0,
+   "p": 0.095,
+   "probs": {
+    "h": 0.3765,
+    "d": 0.2738,
+    "a": 0.3497
+   },
+   "lambdaH": 1.299,
+   "lambdaA": 1.317,
+   "madeAt": "2026-11-26T01:35:57.831Z"
+  }
+ },
+ {
   "id": "401915504",
   "slug": "uefa.europa",
   "comp": "Europa League",
@@ -922,6 +1222,11 @@
    "lambdaH": 1.651,
    "lambdaA": 1.066,
    "madeAt": "2026-11-24T01:30:07.603Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 0,
+   "at": "2026-11-26T01:35:54.204Z"
   }
  },
  {
@@ -947,6 +1252,11 @@
    "lambdaH": 1.992,
    "lambdaA": 1.448,
    "madeAt": "2026-11-24T01:30:07.716Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 3,
+   "at": "2026-11-26T01:35:54.296Z"
   }
  },
  {
@@ -972,6 +1282,11 @@
    "lambdaH": 1.905,
    "lambdaA": 1.351,
    "madeAt": "2026-11-24T01:30:07.881Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 0,
+   "at": "2026-11-26T01:35:54.334Z"
   }
  },
  {
@@ -997,6 +1312,11 @@
    "lambdaH": 1.42,
    "lambdaA": 1.188,
    "madeAt": "2026-11-24T01:30:08.003Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 1,
+   "at": "2026-11-26T01:35:54.388Z"
   }
  },
  {
@@ -1022,6 +1342,11 @@
    "lambdaH": 2.165,
    "lambdaA": 1.69,
    "madeAt": "2026-11-24T01:30:08.090Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 2,
+   "at": "2026-11-26T01:35:54.441Z"
   }
  },
  {
@@ -1047,6 +1372,11 @@
    "lambdaH": 1.382,
    "lambdaA": 1.494,
    "madeAt": "2026-11-24T01:30:08.206Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 1,
+   "at": "2026-11-26T01:35:54.489Z"
   }
  },
  {
@@ -1072,6 +1402,11 @@
    "lambdaH": 2.223,
    "lambdaA": 1.157,
    "madeAt": "2026-11-24T01:30:08.297Z"
+  },
+  "result": {
+   "h": 2,
+   "a": 2,
+   "at": "2026-11-26T01:35:54.583Z"
   }
  },
  {
@@ -1097,6 +1432,11 @@
    "lambdaH": 1.706,
    "lambdaA": 2.179,
    "madeAt": "2026-11-24T01:30:07.345Z"
+  },
+  "result": {
+   "h": 1,
+   "a": 4,
+   "at": "2026-11-26T01:35:54.625Z"
   }
  },
  {
@@ -1122,6 +1462,11 @@
    "lambdaH": 1.653,
    "lambdaA": 1.637,
    "madeAt": "2026-11-24T01:30:07.494Z"
+  },
+  "result": {
+   "h": 0,
+   "a": 1,
+   "at": "2026-11-26T01:35:54.669Z"
   }
  },
  {
